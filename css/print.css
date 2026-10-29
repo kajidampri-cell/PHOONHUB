@@ -1,0 +1,110 @@
+/* ==========================================================================
+   PRINT STYLESHEET (KHUSUS CETAK LAPORAN EVALUASI GURU A4)
+   ========================================================================== */
+@media print {
+  /* Sembunyikan elemen navigasi dan tombol web */
+  .site-header,
+  .site-footer,
+  .btn,
+  .stepper-controls-footer,
+  .stepper-dots-nav,
+  .teacher-drawer-trigger,
+  .modal-overlay,
+  .closing-actions,
+  .read-aloud-btn,
+  .category-tabs,
+  .hero-actions,
+  #a11y-announcer {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .main-wrapper {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .closing-card,
+  .recap-table-box {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Header Formal Cetak */
+  .print-header {
+    display: block !important;
+    border-bottom: 2px solid #000;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .print-header h1 {
+    font-size: 16pt;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  .print-header p {
+    font-size: 10pt;
+    color: #333;
+  }
+
+  /* Tabel Laporan Observasi */
+  .print-eval-table {
+    display: table !important;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .print-eval-table th,
+  .print-eval-table td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 10pt;
+  }
+
+  .print-eval-table th {
+    background-color: #f0f0f0 !important;
+    font-weight: bold;
+  }
+
+  .signature-area {
+    display: flex !important;
+    justify-content: space-between;
+    margin-top: 40px;
+    page-break-inside: avoid;
+  }
+
+  .signature-col {
+    width: 220px;
+    text-align: center;
+  }
+
+  .signature-line {
+    margin-top: 60px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+/* Default sembunyikan area khusus cetak di layar biasa */
+@media screen {
+  .print-header,
+  .print-eval-table,
+  .signature-area {
+    display: none;
+  }
+}

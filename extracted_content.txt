@@ -1,0 +1,477 @@
+﻿DOKUMEN KONTEN WEBSITE
+LATIHAN MOTORIK HALUSANGGOTA GERAK ATAS
+Program bina gerak berbasis aktivitas untuk mendukungkesiapan menulis, ketangkasan jari, dan keterampilan bina diri
+KONSEP UTAMA
+Lihat gambar  •  Ikuti langkah  •  Praktikkan gerakan  •  Selesaikan latihan
+KATEGORI
+3 kelompok latihan
+KEGIATAN
+12 aktivitas motorik
+FORMAT MEDIA
+Ilustrasi statis, tanpa video
+Naskah siap digunakan sebagai acuan penulisan halaman, petunjuk latihan, dan evaluasi pendamping.
+Dokumen rancangan • Oktober 2026
+PENGANTAR
+01  Gambaran Program
+Website ini dirancang sebagai panduan latihan motorik halus anggota gerak atas. Pengguna melihat ilustrasi dan instruksi singkat di layar, lalu mempraktikkan aktivitas menggunakan benda nyata. Website tidak memakai video dan bukan permainan yang mengharuskan semua gerakan dilakukan pada layar.
+Sasaran dan dasar penyusunan
+Rancangan awal dikembangkan dari hasil observasi seorang murid kelas XI SMA berusia 18 tahun dengan cerebral palsy. Hasil observasi menunjukkan penggunaan tangan kanan lebih dominan dan fungsional, kemampuan motorik halus pada beberapa kegiatan manipulatif, serta kelemahan anggota gerak sisi kiri dan kebutuhan dukungan postur serta instruksi. Data tersebut digunakan sebagai pertimbangan penyesuaian aktivitas, bukan untuk menyimpulkan adanya gangguan menulis tertentu.
+Tujuan program
+Melatih gerakan jari dan tangan yang terarah sesuai kemampuan murid.
+Memberikan pengalaman manipulasi benda melalui aktivitas yang berbeda tingkat tuntutannya.
+Mendukung keterampilan fungsional, termasuk kesiapan menulis serta kegiatan bina diri sehari-hari.
+Membantu murid mengikuti instruksi visual yang konsisten dan bertahap.
+Memudahkan guru mendokumentasikan respons, tingkat bantuan, serta kenyamanan murid.
+Batasan penggunaan
+Lima latihan awal ditetapkan oleh pengguna: Rolling Pencil, Rubber Band Extension, Pick Up the Coins, Put Off the Coins, dan Pencil Crawls. Tujuh aktivitas berikutnya merupakan pengembangan rancangan. Langkah gerak dan alat harus diperiksa kembali saat uji coba langsung dengan murid; tingkat pengulangan serta kesulitan tidak ditetapkan seragam. Website tidak menggantikan asesmen dan pendampingan guru/tenaga profesional.
+PRINSIP PENYAJIAN
+Satu aktivitas per halaman • satu instruksi dalam satu langkah • foto/ilustrasi statis yang jelas • tombol navigasi besar • tidak ada video, suara wajib, atau animasi berlebihan.
+ARSITEKTUR WEBSITE
+02  Peta Halaman dan Navigasi
+Alur utama pengguna
+01. Beranda — Menjelaskan tujuan program dan menampilkan tombol Mulai Latihan.
+02. Pilih Kategori — Menawarkan tiga kelompok latihan dan gambaran singkat manfaatnya.
+03. Pilih Aktivitas — Memilih salah satu dari 12 latihan; guru dapat menyesuaikan urutan sesuai kebutuhan.
+04. Halaman Latihan — Menampilkan alat, contoh gambar, langkah gerakan, petunjuk keselamatan, dan tombol Selesai.
+05. Hasil Latihan — Menampilkan aktivitas yang dikerjakan serta lembar catatan pendamping.
+06. Penutup — Menampilkan apresiasi singkat dan pilihan kembali ke beranda.
+Navigasi yang ditampilkan
+Beranda
+Kembali ke halaman pembuka.
+Kategori
+Kembali memilih kelompok aktivitas.
+Sebelumnya
+Kembali ke langkah sebelumnya pada aktivitas yang sama.
+Selanjutnya
+Menampilkan satu instruksi berikutnya.
+Selesai
+Menandai aktivitas telah dikerjakan setelah konfirmasi guru.
+Lihat Hasil
+Membuka ringkasan latihan dan catatan pendamping.
+PRINSIP AKSESIBILITAS
+Gunakan ukuran huruf cukup besar, kontras yang jelas, tombol mudah disentuh, teks singkat, bahasa konkret, serta petunjuk visual yang benar-benar menggambarkan gerakan yang diminta.
+KONTEN SIAP TEMPEL KE WEBSITE
+03  Naskah Halaman Awal
+Identitas halaman
+Judul utama
+Latihan Motorik Halus Anggota Gerak Atas
+Subjudul
+Ayo latih gerakan tangan dan jari melalui kegiatan sehari-hari.
+Tagline
+Lihat gambarnya. Ikuti langkahnya. Coba gerakannya.
+Tombol utama
+Mulai Latihan
+Tombol pendukung
+Lihat Petunjuk
+Paragraf pembuka di beranda
+TEKS BERANDA
+Di sini, kamu dapat mencoba berbagai latihan tangan dan jari. Ada latihan menggunakan pensil, benda kecil, dan alat yang sering digunakan sehari-hari. Pilih latihan, siapkan alat, lalu ikuti petunjuk satu per satu. Guru atau pendamping akan membantu jika diperlukan.
+Bagian “Sebelum Memulai”
+01  Duduk dengan posisi yang nyaman dan stabil.
+02  Pastikan meja serta alat latihan sudah siap.
+03  Gunakan tangan yang paling mampu melakukan gerakan; bantuan untuk tangan lainnya diberikan bila sesuai.
+04  Lakukan gerakan perlahan. Berhenti jika terasa sakit atau tidak nyaman.
+05  Ikuti satu langkah sampai selesai sebelum berpindah ke langkah berikutnya.
+Teks pendukung dan tombol
+Judul kecil
+Pilih kegiatan yang ingin kamu coba
+Kalimat pembantu
+Kamu dapat memilih latihan bersama guru atau pendamping.
+Tombol
+Pilih Kategori
+Bantuan singkat
+Butuh bantuan? Minta guru atau pendamping membacakan petunjuk.
+KONTEN SIAP TEMPEL KE WEBSITE
+04  Menu Kategori Latihan
+JUDUL HALAMAN
+Pilih Latihanmu — Ada tiga kelompok aktivitas yang bisa kamu coba. Pilih bersama guru atau pendamping.
+KATEGORI A — Kesiapan Menulis & Kendali Pensil
+Latihan jari, koordinasi, serta pengendalian benda kecil dan pensil.
+Rolling Pencil
+Rubber Band Extension
+Pick Up the Coins
+Put Off the Coins
+Pencil Crawls
+KATEGORI B — Kekuatan Genggaman & Ketangkasan Jari
+Latihan menggenggam, menjepit, melepaskan, dan memindahkan benda.
+Sponge Squeezing
+Clothespin Clipping
+Putty Pinching
+Tweezer Transfer
+KATEGORI C — Motorik Fungsional & Bina Diri
+Latihan menggunakan kedua tangan dalam kegiatan yang dekat dengan kehidupan sehari-hari.
+Bead Threading
+Bottle Cap Twisting
+Buttoning Practice
+Template Isi Setiap Halaman Aktivitas
+Setiap aktivitas ditampilkan dalam satu halaman khusus dengan struktur seragam, sehingga murid dan guru tidak perlu mempelajari cara navigasi yang berbeda. Keterangan untuk guru dapat diletakkan pada panel yang terpisah dari instruksi untuk murid.
+Kepala halaman
+Nama latihan, urutan, dan kelompok aktivitas.
+Gambar
+Foto atau ilustrasi statis yang memperlihatkan posisi tangan dan alat.
+Tujuan
+Penjelasan singkat kemampuan yang dilatih.
+Siapkan alat
+Daftar alat yang perlu ada di meja.
+Ayo lakukan
+Langkah-langkah bernomor dengan kalimat sederhana.
+Catatan pendamping
+Penyesuaian dan pengamatan yang hanya diperlukan guru.
+Tombol
+Sebelumnya • Selanjutnya • Selesai • Kembali ke Kategori
+KATEGORI A  |  KESIAPAN MENULIS & KENDALI PENSIL
+01  Rolling Pencil
+Menggulingkan Pensil
+TEKS SINGKAT UNTUK MURID
+Ayo gerakkan pensil menggunakan jari tanganmu.
+Tujuan aktivitas: Mengembangkan kontrol gerakan jari ketika mengubah posisi pensil.
+Alat yang disiapkan: Satu batang pensil yang nyaman digenggam.
+Langkah kegiatan di website
+01  Letakkan lengan pada meja dalam posisi nyaman.
+02  Pegang pensil menggunakan jari yang biasa dipakai untuk menulis.
+03  Gulingkan atau putar pensil perlahan menggunakan jari, sesuai gambar contoh.
+04  Usahakan pensil tetap berada dalam kendali tangan.
+05  Kembalikan pensil ke posisi awal, lalu ulangi sesuai arahan pendamping.
+Panduan gambar statis
+Tampilkan posisi awal genggaman dan arah gerak pensil dengan panah, pada satu atau dua gambar.
+Catatan guru atau pendamping
+Penyesuaian: Bila memutar pensil terlalu sulit, mulai dengan pergeseran kecil atau pensil berdiameter lebih besar; guru dapat menstabilkan lengan bila diperlukan.
+Yang diamati: Kestabilan genggaman, arah gerakan, pensil terjatuh/tidak, dan tingkat bantuan.
+PESAN SAAT SELESAI
+Bagus! Kamu sudah mencoba menggerakkan pensil.
+KATEGORI A  |  KESIAPAN MENULIS & KENDALI PENSIL
+02  Rubber Band Extension
+Membuka Jari dengan Karet
+TEKS SINGKAT UNTUK MURID
+Ayo buka jari secara perlahan.
+Tujuan aktivitas: Melatih gerakan membuka jari secara terarah dengan tahanan yang sesuai.
+Alat yang disiapkan: Karet latihan elastis dengan tahanan sangat ringan dan ukuran yang sesuai.
+Langkah kegiatan di website
+01  Duduk dengan tangan ditopang dalam posisi nyaman.
+02  Dengan bantuan pendamping, pasang karet pada jari sesuai gambar; pastikan tidak terlalu ketat.
+03  Buka jari perlahan sampai batas gerak yang nyaman.
+04  Tutup kembali jari secara terkendali.
+05  Ulangi hanya selama gerakan tetap nyaman.
+Panduan gambar statis
+Tampilkan posisi karet yang aman pada jari, gambar saat jari rileks dan saat jari membuka.
+Catatan guru atau pendamping
+Penyesuaian: Jika karet menimbulkan nyeri, tekanan berlebih, perubahan warna jari, atau meningkatkan kekakuan, hentikan. Dapat diganti aktivitas membuka jari tanpa tahanan setelah evaluasi pendamping.
+Yang diamati: Rentang gerak yang nyaman, kelancaran membuka-menutup jari, dan tanda ketidaknyamanan.
+PESAN SAAT SELESAI
+Selesai! Terima kasih sudah mencoba menggerakkan jari.
+KATEGORI A  |  KESIAPAN MENULIS & KENDALI PENSIL
+03  Pick Up the Coins
+Mengambil Koin
+TEKS SINGKAT UNTUK MURID
+Ambil benda satu per satu dengan jari tanganmu.
+Tujuan aktivitas: Melatih gerakan menjepit benda pipih dan memindahkan benda dari meja ke tangan.
+Alat yang disiapkan: Beberapa koin atau keping pipih berukuran aman, alas meja tidak licin.
+Langkah kegiatan di website
+01  Letakkan beberapa keping di atas meja dengan jarak yang mudah dijangkau.
+02  Dekatkan tangan ke keping pertama.
+03  Jepit keping dengan ibu jari dan telunjuk atau kombinasi jari yang paling fungsional.
+04  Angkat keping secara perlahan.
+05  Pindahkan keping ke telapak tangan atau wadah sesuai kemampuan, kemudian lanjutkan ke keping berikutnya.
+Panduan gambar statis
+Gambar tangan menjepit tepi keping, mengangkatnya, lalu memindahkan ke tangan atau wadah.
+Catatan guru atau pendamping
+Penyesuaian: Gunakan keping berukuran lebih besar atau lebih tebal apabila koin tipis sulit diambil. Jumlah benda ditentukan guru.
+Yang diamati: Ketepatan menjepit, keberhasilan mengangkat, koordinasi, dan kebutuhan bantuan.
+PESAN SAAT SELESAI
+Bagus! Kamu sudah mengangkat dan memindahkan benda.
+KATEGORI A  |  KESIAPAN MENULIS & KENDALI PENSIL
+04  Put Off the Coins
+Melepaskan Koin Satu per Satu
+TEKS SINGKAT UNTUK MURID
+Sekarang keluarkan keping dari tanganmu satu per satu.
+Tujuan aktivitas: Melatih pemindahan benda dari telapak tangan menuju ujung jari serta pelepasan yang terkendali.
+Alat yang disiapkan: Beberapa koin atau keping aman dan wadah yang stabil.
+Langkah kegiatan di website
+01  Letakkan beberapa keping dalam telapak tangan sesuai kemampuan.
+02  Tahan keping lainnya agar tidak langsung terjatuh.
+03  Gerakkan satu keping menuju ujung jari.
+04  Letakkan keping pada meja atau wadah dengan perlahan.
+05  Lakukan kembali sampai keping yang disiapkan telah dipindahkan.
+Panduan gambar statis
+Tampilkan keping berada di telapak, bergerak ke ujung jari, lalu diletakkan di meja.
+Catatan guru atau pendamping
+Penyesuaian: Awali dengan satu atau dua keping bila koordinasi dalam telapak masih sulit. Guru boleh membantu memosisikan keping.
+Yang diamati: Kemampuan memindahkan benda dalam satu tangan, pemisahan gerak jari, dan kontrol saat melepas.
+PESAN SAAT SELESAI
+Hebat! Kamu sudah meletakkan keping satu per satu.
+KATEGORI A  |  KESIAPAN MENULIS & KENDALI PENSIL
+05  Pencil Crawls
+Merayapkan Jari di Pensil
+TEKS SINGKAT UNTUK MURID
+Ayo gerakkan jarimu menyusuri pensil.
+Tujuan aktivitas: Melatih pengaturan posisi genggaman dengan gerakan jari sepanjang batang pensil.
+Alat yang disiapkan: Satu pensil yang tidak terlalu licin dan aman digunakan.
+Langkah kegiatan di website
+01  Pegang pensil dengan ibu jari, telunjuk, dan jari tengah sesuai kemampuan.
+02  Letakkan tangan dalam posisi yang nyaman.
+03  Gerakkan jari sedikit demi sedikit menyusuri batang pensil.
+04  Lanjutkan gerakan ke arah ujung pensil tanpa melepas kendali.
+05  Ubah arah dan gerakkan jari kembali menuju posisi semula.
+Panduan gambar statis
+Gambar tiga posisi jari pada batang pensil beserta panah naik dan turun.
+Catatan guru atau pendamping
+Penyesuaian: Gunakan pensil berukuran lebih besar atau pegangan pensil jika diperlukan. Jangan memaksa pola genggaman tertentu.
+Yang diamati: Kemampuan menggeser posisi jari, koordinasi, kestabilan pensil, dan bantuan.
+PESAN SAAT SELESAI
+Bagus! Jarimu sudah bergerak sepanjang pensil.
+KATEGORI B  |  KEKUATAN GENGGAMAN & KETANGKASAN JARI
+06  Sponge Squeezing
+Meremas Spons
+TEKS SINGKAT UNTUK MURID
+Ayo remas spons, lalu lepaskan perlahan.
+Tujuan aktivitas: Melatih gerakan menggenggam dan melepaskan benda lunak secara terkendali.
+Alat yang disiapkan: Spons bersih dan lembut yang sesuai ukuran tangan.
+Langkah kegiatan di website
+01  Letakkan spons pada telapak tangan.
+02  Rapatkan jari mengelilingi spons.
+03  Remas spons dengan tenaga yang nyaman.
+04  Lepaskan tekanan dan buka genggaman perlahan.
+05  Coba kembali sesuai arahan guru.
+Panduan gambar statis
+Gambar tangan sebelum meremas, saat spons tertekan, dan setelah dilepaskan.
+Catatan guru atau pendamping
+Penyesuaian: Pilih spons lebih lunak atau lebih besar agar mudah digenggam. Hindari remasan kuat jika menimbulkan nyeri atau kaku.
+Yang diamati: Bentuk genggaman, kemampuan melepas, kontrol tekanan, dan tanda kelelahan.
+PESAN SAAT SELESAI
+Selesai! Kamu sudah mencoba meremas dan melepas spons.
+KATEGORI B  |  KEKUATAN GENGGAMAN & KETANGKASAN JARI
+07  Clothespin Clipping
+Menjepit Penjepit Baju
+TEKS SINGKAT UNTUK MURID
+Ayo pasang penjepit pada tepi karton.
+Tujuan aktivitas: Melatih gerakan menjepit dan melepaskan tekanan pada benda.
+Alat yang disiapkan: Penjepit baju dengan tahanan ringan, karton tebal atau papan bertepi aman.
+Langkah kegiatan di website
+01  Pegang penjepit baju dengan ibu jari dan jari lainnya.
+02  Tekan penjepit sampai bagian ujungnya terbuka.
+03  Arahkan penjepit menuju tepi karton.
+04  Lepaskan tekanan supaya penjepit terpasang.
+05  Ambil kembali penjepit dan ulangi sesuai kemampuan.
+Panduan gambar statis
+Gambar posisi menekan penjepit, pemasangan pada tepi karton, dan pelepasan.
+Catatan guru atau pendamping
+Penyesuaian: Pilih penjepit yang ringan dan mudah dibuka; posisikan karton agar stabil.
+Yang diamati: Kontrol jepitan, ketepatan menempatkan alat, serta kebutuhan stabilisasi.
+PESAN SAAT SELESAI
+Bagus! Penjepit berhasil kamu pasang.
+KATEGORI B  |  KEKUATAN GENGGAMAN & KETANGKASAN JARI
+08  Putty Pinching
+Mencubit Plastisin Lunak
+TEKS SINGKAT UNTUK MURID
+Ayo bentuk plastisin menggunakan jari.
+Tujuan aktivitas: Melatih penggunaan ujung jari untuk mencubit, menekan, dan mengubah bentuk benda lunak.
+Alat yang disiapkan: Plastisin atau putty lunak yang aman dan bersih.
+Langkah kegiatan di website
+01  Letakkan plastisin lunak di atas meja.
+02  Pegang sedikit plastisin menggunakan ibu jari dan telunjuk.
+03  Cubit atau tekan plastisin perlahan.
+04  Lepaskan, lalu ulangi pada bagian lainnya.
+05  Coba bentuk bulatan kecil atau pipihkan plastisin bila memungkinkan.
+Panduan gambar statis
+Gambar gerakan mencubit dan menekan plastisin dengan ujung jari.
+Catatan guru atau pendamping
+Penyesuaian: Gunakan bahan lebih lunak apabila diperlukan. Hindari bahan yang lengket berlebihan atau sulit dilepaskan.
+Yang diamati: Kontrol ujung jari, kekuatan yang digunakan, keakuratan, dan kelelahan.
+PESAN SAAT SELESAI
+Hebat! Kamu sudah membentuk plastisin dengan jari.
+KATEGORI B  |  KEKUATAN GENGGAMAN & KETANGKASAN JARI
+09  Tweezer Transfer
+Memindahkan Benda dengan Penjepit
+TEKS SINGKAT UNTUK MURID
+Ayo pindahkan benda ke dalam wadah.
+Tujuan aktivitas: Melatih koordinasi jari dan mata-tangan ketika menggunakan alat penjepit.
+Alat yang disiapkan: Penjepit tumpul yang mudah ditekan, pom-pom atau benda ringan, dua wadah.
+Langkah kegiatan di website
+01  Letakkan benda-benda ringan di wadah pertama.
+02  Pegang penjepit dengan tangan yang digunakan beraktivitas.
+03  Buka penjepit dan arahkan ke satu benda.
+04  Jepit benda, angkat, lalu pindahkan menuju wadah kedua.
+05  Lepaskan benda perlahan dan ulangi sesuai kemampuan.
+Panduan gambar statis
+Gambar pegangan alat, posisi menjepit, dan pemindahan benda antarwadah.
+Catatan guru atau pendamping
+Penyesuaian: Gunakan penjepit lebih besar atau benda lebih besar bila kontrol masih terbatas.
+Yang diamati: Kemampuan mengatur tekanan penjepit, ketepatan sasaran, dan bantuan.
+PESAN SAAT SELESAI
+Bagus! Kamu sudah memindahkan benda menggunakan penjepit.
+KATEGORI C  |  MOTORIK FUNGSIONAL & BINA DIRI
+10  Bead Threading
+Meronce Manik-Manik
+TEKS SINGKAT UNTUK MURID
+Ayo masukkan manik-manik ke dalam tali.
+Tujuan aktivitas: Melatih koordinasi mata-tangan dan penggunaan dua tangan dalam tugas fungsional.
+Alat yang disiapkan: Manik-manik berukuran besar dengan lubang jelas dan tali yang ujungnya cukup kaku.
+Langkah kegiatan di website
+01  Letakkan tali dan manik-manik pada meja yang stabil.
+02  Pegang tali dengan satu tangan atau gunakan bantuan penyangga.
+03  Ambil satu manik-manik dengan tangan yang lebih fungsional.
+04  Arahkan lubang manik-manik ke ujung tali.
+05  Masukkan manik-manik hingga melewati ujung tali; lanjutkan sesuai kemampuan.
+Panduan gambar statis
+Gambar posisi tangan menahan tali dan memasukkan manik-manik.
+Catatan guru atau pendamping
+Penyesuaian: Gunakan manik-manik besar, tali lebih kaku, dan penopang agar tugas tidak terlalu sulit. Jangan memakai benda yang berisiko tertelan.
+Yang diamati: Ketepatan memasukkan manik-manik, kerja sama kedua tangan, dan bantuan.
+PESAN SAAT SELESAI
+Bagus! Kamu sudah mencoba meronce.
+KATEGORI C  |  MOTORIK FUNGSIONAL & BINA DIRI
+11  Bottle Cap Twisting
+Memutar Tutup Botol
+TEKS SINGKAT UNTUK MURID
+Ayo buka lalu tutup botol secara perlahan.
+Tujuan aktivitas: Melatih putaran tangan/jari dan penggunaan tangan untuk aktivitas sehari-hari.
+Alat yang disiapkan: Botol plastik stabil dengan tutup berukuran mudah digenggam, alas antiselip bila perlu.
+Langkah kegiatan di website
+01  Letakkan botol pada meja yang stabil.
+02  Tahan botol dengan tangan lain, alat bantu, atau bantuan pendamping.
+03  Pegang tutup botol menggunakan tangan yang lebih fungsional.
+04  Putar tutup perlahan sampai terbuka.
+05  Pasang kembali tutup, lalu putar hingga menutup dengan nyaman.
+Panduan gambar statis
+Gambar tangan menahan badan botol dan tangan lain memutar tutup berlawanan arah lalu mengencangkannya.
+Catatan guru atau pendamping
+Penyesuaian: Pilih tutup besar dan tidak terlalu rapat. Hindari memaksa putaran pergelangan jika terbatas atau nyeri.
+Yang diamati: Koordinasi bilateral, arah putaran, kekuatan cengkeraman, dan bantuan.
+PESAN SAAT SELESAI
+Hebat! Kamu sudah mencoba membuka dan menutup botol.
+KATEGORI C  |  MOTORIK FUNGSIONAL & BINA DIRI
+12  Buttoning Practice
+Latihan Mengancingkan Baju
+TEKS SINGKAT UNTUK MURID
+Ayo masukkan kancing ke dalam lubangnya.
+Tujuan aktivitas: Melatih keterampilan manipulasi jari yang digunakan saat berpakaian.
+Alat yang disiapkan: Papan latihan kancing atau pakaian dengan kancing besar.
+Langkah kegiatan di website
+01  Letakkan papan kancing atau pakaian pada meja.
+02  Pegang kain atau sisi lubang kancing agar tidak bergeser.
+03  Pegang satu kancing dengan tangan yang paling fungsional.
+04  Arahkan kancing menuju lubangnya dan dorong perlahan hingga masuk.
+05  Rapikan kain, lalu lanjutkan ke kancing berikutnya jika mampu.
+Panduan gambar statis
+Gambar tiga posisi: memegang kancing, memasukkan setengah kancing, dan kancing terpasang.
+Catatan guru atau pendamping
+Penyesuaian: Mulai dari kancing besar dan lubang longgar. Stabilkan papan atau kain jika tangan kiri sulit membantu.
+Yang diamati: Ketepatan koordinasi jari, keberhasilan memasukkan kancing, dan kemandirian.
+PESAN SAAT SELESAI
+Bagus! Kamu sudah mencoba mengancingkan baju.
+PELAKSANAAN PROGRAM
+05  Panduan Penggunaan untuk Guru
+Sebelum kegiatan
+01  Pilih aktivitas berdasarkan kemampuan yang sudah terlihat dalam asesmen dan target fungsional yang ingin dilatih.
+02  Siapkan benda, meja, kursi, dan penopang yang dibutuhkan. Periksa agar tidak ada alat tajam, rusak, atau terlalu berat.
+03  Pastikan murid berada pada posisi duduk yang stabil; perhatikan dukungan lengan dan kemungkinan tangan kiri digunakan sebagai penahan.
+04  Tunjukkan halaman latihan. Baca instruksi apabila dibutuhkan dan peragakan secara langsung jika murid belum memahami gambar.
+Selama kegiatan
+01  Berikan satu instruksi untuk setiap langkah dan tunggu murid mencoba.
+02  Prioritaskan gerakan aktif yang nyaman. Berikan bantuan seperlunya, mulai dari petunjuk visual/verbal hingga bantuan fisik bila dibutuhkan dan aman.
+03  Amati kualitas gerakan, bukan hanya jumlah pengulangan. Beri jeda ketika murid mulai lelah.
+04  Hentikan aktivitas jika muncul nyeri, peningkatan kekakuan, atau tanda ketidaknyamanan; lakukan penyesuaian sebelum latihan dilanjutkan.
+Setelah kegiatan
+01  Tandai latihan sebagai selesai hanya jika murid benar-benar telah mencoba aktivitas tersebut.
+02  Catat jenis bantuan, kualitas gerakan, dan respons murid menggunakan lembar evaluasi.
+03  Berikan umpan balik yang spesifik terhadap usaha atau keterampilan yang ditunjukkan.
+04  Tentukan apakah pada pertemuan berikutnya latihan diulang, disederhanakan, atau ditingkatkan secara bertahap.
+CATATAN KESELAMATAN
+Tidak ada target pengulangan atau durasi baku pada dokumen ini. Penentuan intensitas latihan perlu didasarkan pada asesmen, toleransi fisik, dan arahan profesional bila diperlukan. Penggunaan karet harus diawasi dan tidak boleh menimbulkan tekanan berlebihan pada jari.
+FORM GURU / PENDAMPING
+06  Evaluasi dan Pencatatan
+Evaluasi bertujuan mencatat kemampuan yang tampak selama kegiatan. Penyelesaian tombol website bukan bukti bahwa kemampuan motorik telah meningkat. Gunakan informasi berikut untuk mencatat praktik nyata.
+Identitas sesi
+Tanggal / pertemuan
+.................................................................
+Kode murid
+.................................................................
+Kategori dan latihan
+.................................................................
+Pendamping
+.................................................................
+Pencatatan per aktivitas
+Tugas dilakukan
+Ya / Sebagian / Belum
+Tingkat bantuan
+Mandiri / Petunjuk visual / Petunjuk verbal / Bantuan fisik
+Ketepatan gerakan
+Baik / Berkembang / Perlu bantuan lebih lanjut
+Kondisi tangan
+Nyaman / Lelah / Tidak nyaman / Nyeri
+Catatan observasi
+.................................................................
+Tindak lanjut
+Ulangi / Sederhanakan / Lanjutkan / Hentikan & evaluasi
+Evaluasi kemampuan fungsional
+Untuk melihat hubungan latihan dengan aktivitas sehari-hari, gunakan tugas nyata yang sebanding pada awal dan akhir periode program. Contoh: memegang serta mengatur posisi pensil, menyalin kata yang sesuai kemampuan, membuka tutup botol, atau memasang kancing. Catat kualitas hasil, waktu pengerjaan jika relevan, tingkat bantuan, dan konsistensi. Perubahan hasil tidak otomatis membuktikan pengaruh program tanpa rancangan evaluasi yang sesuai.
+TEKS UNTUK HALAMAN HASIL
+Latihan hari ini telah dicatat. Kamu sudah berusaha melakukan kegiatan dengan baik. Guru atau pendamping akan membantu memilih latihan berikutnya.
+KONTEN SIAP TEMPEL KE WEBSITE
+07  Naskah Halaman Penutup
+JUDUL UTAMA
+Latihan Hari Ini Selesai!
+Terima kasih sudah berlatih. Hari ini kamu sudah mencoba menggerakkan tangan dan jari melalui kegiatan yang dipilih. Istirahatlah bila diperlukan, lalu lanjutkan latihan pada pertemuan berikutnya.
+Ringkasan yang ditampilkan
+Aktivitas yang telah dicoba: [nama kegiatan].
+Jumlah aktivitas yang selesai: [jumlah kegiatan].
+Catatan pendamping: [ringkasan singkat, bila diisi].
+Pilihan tombol: Kembali ke Beranda • Pilih Latihan Lain • Lihat Catatan.
+Pesan alternatif bila latihan belum selesai
+Tidak apa-apa jika latihan belum selesai. Kamu dapat beristirahat atau mencoba lagi sesuai arahan guru. Yang penting, gerakan dilakukan dengan aman dan nyaman.
+Microcopy tombol dan notifikasi
+Saat membuka latihan
+Siapkan alat terlebih dahulu.
+Saat pindah langkah
+Lanjut ke langkah berikutnya?
+Saat menekan selesai
+Apakah latihan ini sudah dicoba?
+Konfirmasi selesai
+Aktivitas berhasil dicatat.
+Jika tidak nyaman
+Hentikan latihan dan beri tahu pendamping.
+Jika kembali
+Kembali ke daftar aktivitas.
+PANDUAN PENYUSUNAN ASET STATIS
+08  Kebutuhan Konten Visual
+Website tidak menggunakan video. Setiap aktivitas membutuhkan satu gambar utama dan, jika gerakannya memerlukan kejelasan tambahan, dua hingga tiga gambar tahap. Gambar sebaiknya berfokus pada posisi tangan, benda, serta arah gerak; gunakan latar sederhana dan kontras yang baik.
+Daftar gambar utama yang perlu disiapkan
+01. Rolling Pencil: Tampilkan posisi awal genggaman dan arah gerak pensil dengan panah, pada satu atau dua gambar.
+02. Rubber Band Extension: Tampilkan posisi karet yang aman pada jari, gambar saat jari rileks dan saat jari membuka.
+03. Pick Up the Coins: Gambar tangan menjepit tepi keping, mengangkatnya, lalu memindahkan ke tangan atau wadah.
+04. Put Off the Coins: Tampilkan keping berada di telapak, bergerak ke ujung jari, lalu diletakkan di meja.
+05. Pencil Crawls: Gambar tiga posisi jari pada batang pensil beserta panah naik dan turun.
+06. Sponge Squeezing: Gambar tangan sebelum meremas, saat spons tertekan, dan setelah dilepaskan.
+07. Clothespin Clipping: Gambar posisi menekan penjepit, pemasangan pada tepi karton, dan pelepasan.
+08. Putty Pinching: Gambar gerakan mencubit dan menekan plastisin dengan ujung jari.
+09. Tweezer Transfer: Gambar pegangan alat, posisi menjepit, dan pemindahan benda antarwadah.
+10. Bead Threading: Gambar posisi tangan menahan tali dan memasukkan manik-manik.
+11. Bottle Cap Twisting: Gambar tangan menahan badan botol dan tangan lain memutar tutup berlawanan arah lalu mengencangkannya.
+12. Buttoning Practice: Gambar tiga posisi: memegang kancing, memasukkan setengah kancing, dan kancing terpasang.
+Ketentuan aksesibilitas
+Setiap gambar memiliki teks alternatif yang menjelaskan tindakan, misalnya “Ibu jari dan telunjuk menjepit koin dari meja”.
+Jangan menyampaikan informasi hanya dengan warna atau arah panah; lengkapi dengan teks singkat.
+Tombol dapat dipilih melalui keyboard dan cukup besar untuk disentuh.
+Urutan langkah tetap terbaca meski gambar tidak muncul.
+Hindari ilustrasi yang terlalu ramai, kilatan, serta batas waktu otomatis yang memaksa murid berpindah langkah.
+SERAH-TERIMA KONTEN
+09  Checklist Final Pengembangan Website
+Beranda dan navigasi
+☐  Judul serta tujuan program muncul pada halaman awal.
+☐  Menu menampilkan tiga kategori dan 12 aktivitas.
+☐  Tombol Beranda, Kembali, Sebelumnya, Selanjutnya, dan Selesai berfungsi.
+☐  Tidak ada video sebagai elemen wajib atau disematkan dalam halaman.
+Konten latihan
+☐  Setiap aktivitas memiliki gambar statis, alat, tujuan, dan langkah berurutan.
+☐  Bahasa petunjuk sederhana dan konsisten.
+☐  Aktivitas tangan kanan/kiri dapat disesuaikan kemampuan tanpa memaksakan gerak.
+☐  Guru dapat menandai latihan selesai dan mencatat bantuan.
+Uji coba dan evaluasi
+☐  Semua alat sudah diperiksa keamanan dan ukurannya.
+☐  Gambar telah dicocokkan dengan gerakan nyata.
+☐  Instruksi telah dicoba bersama murid dan diperbaiki bila membingungkan.
+☐  Hasil latihan dicatat berdasarkan pengamatan, bukan sekadar interaksi layar.
+Catatan pengembangan
+Dokumen ini merupakan rancangan isi website, belum merupakan bukti efektivitas program. Penamaan lima latihan awal mengikuti daftar dari pengguna; rincian gerak, gambar contoh, penyesuaian fisik, dan urutan akhir tetap perlu dikonfirmasi melalui uji coba. Sasaran individual dan hasil asesmen disimpan sebagai catatan pendamping, bukan ditampilkan sebagai identitas pribadi di halaman website publik.
+AKHIR DOKUMEN
+Rangkaian konten lengkap: halaman awal → pemilihan kategori → 12 latihan → pencatatan hasil → halaman penutup.

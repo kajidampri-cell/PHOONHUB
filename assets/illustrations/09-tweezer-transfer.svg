@@ -1,0 +1,62 @@
+<svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi Realistis Gaya Komik: Memindahkan Benda dengan Penjepit">
+  <defs>
+    <filter id="shadow09" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#8a3818" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background Warm Cream -->
+  <rect width="400" height="400" fill="#faede4"/>
+
+  <!-- Dua Wadah Keramik di Meja -->
+  <!-- Wadah Kiri -->
+  <g transform="translate(65, 290)">
+    <ellipse cx="40" cy="20" rx="42" ry="14" fill="#cbb5a4" opacity="0.6"/>
+    <path d="M 0 10 C 0 35, 80 35, 80 10 Z" fill="#e0e7ff" stroke="#18181b" stroke-width="3"/>
+    <ellipse cx="40" cy="10" rx="40" ry="12" fill="#c7d2fe" stroke="#18181b" stroke-width="2.5"/>
+    <!-- Pom-pom Sisa -->
+    <circle cx="35" cy="8" r="10" fill="#ec4899" stroke="#18181b" stroke-width="2"/>
+    <circle cx="48" cy="12" r="9" fill="#10b981" stroke="#18181b" stroke-width="2"/>
+  </g>
+
+  <!-- Wadah Kanan -->
+  <g transform="translate(265, 290)">
+    <ellipse cx="40" cy="20" rx="42" ry="14" fill="#cbb5a4" opacity="0.6"/>
+    <path d="M 0 10 C 0 35, 80 35, 80 10 Z" fill="#fef3c7" stroke="#18181b" stroke-width="3"/>
+    <ellipse cx="40" cy="10" rx="40" ry="12" fill="#fde68a" stroke="#18181b" stroke-width="2.5"/>
+  </g>
+
+  <!-- Garis Lintasan Transfer Lembut -->
+  <path d="M 105 280 C 140 180, 240 180, 295 280" fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="6 4"/>
+
+  <!-- Alat Penjepit Logam (Tweezer) -->
+  <g transform="translate(185, 140)">
+    <!-- Batang Penjepit Abu-abu Logam -->
+    <path d="M -5 0 L -25 90 L -14 90 L 0 15 L 14 90 L 25 90 L 5 0 Z" fill="#9ca3af" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="0" y1="15" x2="0" y2="70" stroke="#4b5563" stroke-width="2"/>
+    <!-- Pom-pom Bulu Terjepit di Bawah -->
+    <circle cx="0" cy="94" r="14" fill="#a855f7" stroke="#18181b" stroke-width="2.5"/>
+    <circle cx="-3" cy="90" r="3" fill="#fff" opacity="0.5"/>
+  </g>
+
+  <!-- Tangan Memegang Penjepit Seperti Pensil (Gaya Komik) -->
+  <g filter="url(#shadow09)">
+    <path d="M 390 180 C 350 200, 310 215, 275 220 C 255 225, 235 220, 220 205 C 205 195, 195 180, 185 160 C 175 145, 185 135, 200 145 C 215 155, 230 170, 250 180 C 280 190, 320 185, 360 170 Z" fill="#d57c4f"/>
+    <!-- Punggung Tangan -->
+    <path d="M 380 170 C 330 190, 290 200, 255 195 C 235 190, 215 175, 195 155 C 185 140, 175 145, 185 165 C 200 185, 220 205, 245 215 C 275 225, 315 220, 360 200 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- Ibu Jari Menjepit Sisi Kanan Penjepit -->
+    <path d="M 195 165 C 190 175, 195 195, 210 195 C 220 195, 225 185, 220 170 C 215 160, 200 155, 195 165 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="202" cy="188" rx="4" ry="4" fill="#fef3ec" stroke="#18181b" stroke-width="2"/>
+
+    <!-- Jari Telunjuk Menjepit Sisi Kiri Penjepit -->
+    <path d="M 175 150 C 165 160, 168 180, 182 180 C 190 180, 195 170, 190 155 C 185 145, 180 145, 175 150 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="174" cy="172" rx="4" ry="4" fill="#fef3ec" stroke="#18181b" stroke-width="2"/>
+
+    <!-- Arsiran Komik Realistis -->
+    <g stroke="#18181b" stroke-width="1.5" stroke-linecap="round">
+      <line x1="280" y1="210" x2="300" y2="215"/>
+      <line x1="275" y1="218" x2="295" y2="223"/>
+      <line x1="330" y1="205" x2="350" y2="210"/>
+    </g>
+  </g>
+</svg>

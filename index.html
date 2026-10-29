@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Platform panduan interaktif latihan bina gerak motorik halus anggota gerak atas untuk kesiapan menulis, ketangkasan jari, dan keterampilan bina diri.">
+  <meta name="theme-color" content="#1e3a8a">
+  <title>Bina Gerak Motorik Halus — Panduan Latihan Anggota Gerak Atas</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/print.css">
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+
+  <!-- ARIA Live Announcer untuk Screen Reader -->
+  <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Header Navigasi Global -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <div id="nav-brand" class="brand-wrapper" role="button" tabindex="0" aria-label="Kembali ke Beranda">
+        <div class="brand-icon" aria-hidden="true">✋</div>
+        <div class="brand-info">
+          <h1>Bina Gerak</h1>
+          <p>Motorik Halus Anggota Gerak Atas</p>
+        </div>
+      </div>
+
+      <nav class="header-actions" aria-label="Navigasi Utama">
+        <button id="nav-home-btn" class="btn btn-outline" aria-label="Ke Beranda">
+          Beranda
+        </button>
+        <button id="nav-categories-btn" class="btn btn-primary" aria-label="Pilih Kategori Latihan">
+          Pilih Latihan
+        </button>
+        <button id="nav-closing-btn" class="btn btn-secondary" aria-label="Lihat Hasil & Rekap Sesi">
+          Hasil Sesi
+          <span id="nav-today-count" class="activity-badge cat-a" style="display: none; margin-left: 4px;">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Utama (SPA Views) -->
+  <main class="main-wrapper" id="main-content" role="main">
+
+    <!-- ======================================================================
+         01. VIEW: BERANDA & SOP SEBELUM MEMULAI
+         ====================================================================== -->
+    <section id="view-home" class="view-section active" aria-labelledby="home-title">
+      <!-- Hero Card -->
+      <article class="hero-card">
+        <span class="hero-badge">Program Bina Gerak Berbasis Aktivitas Fisik</span>
+        <h2 id="home-title">Latihan Motorik Halus Anggota Gerak Atas</h2>
+        <p class="hero-subtitle">Ayo latih gerakan tangan dan jari melalui kegiatan sehari-hari.</p>
+        <p class="hero-tagline">
+          Lihat gambarnya. Ikuti langkahnya. Coba gerakannya.<br>
+          Di sini, kamu dapat mencoba berbagai latihan tangan dan jari menggunakan pensil, benda kecil, dan alat sehari-hari. 
+          Pilih latihan, siapkan alat di meja, lalu ikuti petunjuk satu per satu bersama guru atau pendamping.
+        </p>
+        <div class="hero-actions">
+          <button id="hero-start-btn" class="btn btn-primary btn-large">
+            Mulai Latihan Sekarang
+          </button>
+          <button id="hero-guide-btn" class="btn btn-outline btn-large">
+            Lihat Petunjuk Keselamatan
+          </button>
+        </div>
+      </article>
+
+      <!-- Konsep Utama -->
+      <div class="concept-grid">
+        <div class="concept-card">
+          <span class="icon">🖼️</span>
+          <h4>Lihat Gambar</h4>
+          <p>Ilustrasi statis posisi tangan dan alat yang jelas dengan arah gerak visual.</p>
+        </div>
+        <div class="concept-card">
+          <span class="icon">👣</span>
+          <h4>Ikuti Langkah</h4>
+          <p>Satu instruksi konkret per langkah secara berurutan dan tanpa batas waktu.</p>
+        </div>
+        <div class="concept-card">
+          <span class="icon">✏️</span>
+          <h4>Praktikkan Gerakan</h4>
+          <p>Aktivitas dilakukan pada benda fisik nyata di atas meja, bukan game virtual.</p>
+        </div>
+        <div class="concept-card">
+          <span class="icon">📝</span>
+          <h4>Catatan Evaluasi</h4>
+          <p>Guru mendokumentasikan tingkat bantuan dan kenyamanan murid secara langsung.</p>
+        </div>
+      </div>
+
+      <!-- Checklist "Sebelum Memulai" (SOP Keselamatan) -->
+      <section id="safety-sop-section" class="safety-box" aria-labelledby="sop-heading">
+        <div class="safety-header">
+          <div class="safety-icon" aria-hidden="true">🛡️</div>
+          <h3 id="sop-heading">Sebelum Memulai Latihan</h3>
+        </div>
+        <ul class="safety-list">
+          <li class="safety-item">
+            <span class="safety-number">1</span>
+            <div class="safety-text">Duduk dengan posisi yang nyaman dan stabil pada kursi serta meja belajar.</div>
+          </li>
+          <li class="safety-item">
+            <span class="safety-number">2</span>
+            <div class="safety-text">Pastikan meja serta alat latihan fisik yang dibutuhkan sudah siap di hadapanmu.</div>
+          </li>
+          <li class="safety-item">
+            <span class="safety-number">3</span>
+            <div class="safety-text">Gunakan tangan yang paling mampu; bantuan tangan lainnya diberikan bila sesuai.</div>
+          </li>
+          <li class="safety-item">
+            <span class="safety-number">4</span>
+            <div class="safety-text">Lakukan gerakan perlahan. <strong>Berhenti segera jika terasa sakit, nyeri, atau tidak nyaman.</strong></div>
+          </li>
+          <li class="safety-item">
+            <span class="safety-number">5</span>
+            <div class="safety-text">Ikuti satu langkah sampai selesai sebelum berpindah ke langkah berikutnya.</div>
+          </li>
+        </ul>
+        <div style="text-align: center; margin-top: 24px;">
+          <button id="sop-start-btn" class="btn btn-primary btn-large">
+            Saya Mengerti, Pilih Kategori Latihan
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- ======================================================================
+         02. VIEW: KATALOG KATEGORI & 12 AKTIVITAS
+         ====================================================================== -->
+    <section id="view-categories" class="view-section" aria-labelledby="cat-title">
+      <div class="category-header-banner">
+        <h2 id="cat-title">Pilih Latihanmu</h2>
+        <p>Ada 3 kelompok aktivitas yang bisa kamu coba. Pilih bersama guru atau pendamping.</p>
+      </div>
+
+      <!-- Tab Filter Kategori -->
+      <nav id="category-tabs-container" class="category-tabs" aria-label="Pilihan Kategori Latihan"></nav>
+
+      <!-- Grid 12 Kartu Aktivitas -->
+      <div id="activities-grid-container" class="activities-grid"></div>
+    </section>
+
+    <!-- ======================================================================
+         03. VIEW: WIZARD LATIHAN INTERAKTIF (STEPPER)
+         ====================================================================== -->
+    <section id="view-exercise" class="view-section" aria-labelledby="ex-title-en">
+      <div class="exercise-container">
+        <!-- Bar Navigasi Atas -->
+        <div class="exercise-nav-bar">
+          <button id="ex-back-categories-btn" class="btn btn-outline" aria-label="Kembali ke Daftar Kategori">
+            ← Kembali ke Kategori
+          </button>
+          <span id="ex-cat-badge" class="activity-badge cat-a" style="font-size: 0.9rem;"></span>
+        </div>
+
+        <!-- Kartu Utama Latihan -->
+        <article class="exercise-card-main">
+          <!-- Banner Header Latihan -->
+          <div id="ex-header-banner" class="exercise-header-banner cat-a">
+            <div class="ex-title-group">
+              <h2 id="ex-title-en">Nama Latihan</h2>
+              <p id="ex-title-id">Terjemahan Indonesia</p>
+            </div>
+            <div class="step-indicator-tag" id="step-current-tag">
+              Langkah 1 dari 5
+            </div>
+          </div>
+
+          <!-- Persiapan Alat & Tujuan -->
+          <div class="preparation-box">
+            <div class="prep-item">
+              <span aria-hidden="true">🎯</span>
+              <div><strong>Tujuan:</strong> <span id="ex-goal-text"></span></div>
+            </div>
+            <div class="prep-item">
+              <span aria-hidden="true">📦</span>
+              <div><strong>Siapkan Alat:</strong> <span id="ex-tools-list"></span></div>
+            </div>
+          </div>
+
+          <!-- Safety Alert Jika Ada -->
+          <div id="ex-safety-callout" class="exercise-safety-callout" style="display: none;"></div>
+
+          <!-- Stage: Visual Ilustrasi Statis + Instruksi Berjalan -->
+          <div class="exercise-stage">
+            <!-- Visual Display -->
+            <div class="visual-display-wrapper">
+              <div id="ex-visual-stage" class="visual-illustration-container"></div>
+              <p id="ex-visual-caption" class="visual-cue-caption"></p>
+              <div class="anim-control-bar">
+                <button id="anim-toggle-btn" class="btn btn-outline" style="min-height: 38px; padding: 6px 14px; font-size: 0.85rem;" aria-label="Jeda atau Putar Gerakan Animasi">
+                  ⏸️ <span>Jeda Animasi 2D</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Panel Instruksi & Kontrol Suara -->
+            <div class="instruction-panel">
+              <p id="instruction-text" class="instruction-main-text"></p>
+              
+              <button id="speech-btn" class="btn btn-secondary read-aloud-btn" aria-label="Dengarkan petunjuk dengan suara">
+                🔊 <span>Dengarkan Petunjuk</span>
+              </button>
+
+              <!-- Titik Stepper 1 - 5 -->
+              <nav id="stepper-dots" class="stepper-dots-nav" aria-label="Pilihan Langkah Latihan"></nav>
+            </div>
+          </div>
+
+          <!-- Footer Bar Navigasi Langkah -->
+          <div class="stepper-controls-footer">
+            <button id="step-prev-btn" class="btn btn-outline btn-large" disabled>
+              ← Sebelumnya
+            </button>
+            <div style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">
+              Gunakan tombol panah keyboard ← / →
+            </div>
+            <button id="step-next-btn" class="btn btn-primary btn-large">
+              Selanjutnya →
+            </button>
+            <button id="step-finish-btn" class="btn btn-success btn-large" style="display: none;">
+              ✓ Tandai Selesai
+            </button>
+          </div>
+        </article>
+
+        <!-- Panel Khusus Guru/Pendamping (Teacher Drawer) -->
+        <aside class="teacher-drawer" aria-labelledby="teacher-drawer-title">
+          <button id="teacher-drawer-trigger" class="teacher-drawer-trigger" aria-expanded="false" aria-controls="teacher-drawer-content">
+            <span id="teacher-drawer-title">📋 Catatan Pendamping & Aspek Observasi</span>
+            <span class="drawer-arrow" aria-hidden="true">▼</span>
+          </button>
+          <div id="teacher-drawer-content" class="teacher-drawer-content">
+            <div class="drawer-section">
+              <h4>💡 Panduan Penyesuaian / Adaptasi Fisik</h4>
+              <p id="drawer-adaptation-text"></p>
+            </div>
+            <div class="drawer-section">
+              <h4>👁️ Hal-Hal yang Diamati Guru</h4>
+              <ul id="drawer-observations-list"></ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         04. VIEW: RINGKASAN HASIL & APRESIASI PENUTUP
+         ====================================================================== -->
+    <section id="view-closing" class="view-section" aria-labelledby="closing-title">
+      <!-- Formal Print Header (Hanya muncul saat cetak) -->
+      <div class="print-header">
+        <h1>LEMBAR REKAPITULASI EVALUASI LATIHAN MOTORIK HALUS</h1>
+        <p>Program Bina Gerak Anggota Gerak Atas • Terintegrasi Kurikulum Fungsional</p>
+      </div>
+
+      <article class="closing-card">
+        <span class="celebration-icon" aria-hidden="true">🎉</span>
+        <h2 id="closing-title">Latihan Selesai!</h2>
+        <p class="closing-lead">
+          Terima kasih sudah berlatih hari ini. Kamu sudah berusaha menggerakkan tangan dan jari dengan baik. 
+          Istirahatlah sejenak dan lanjutkan latihan pada pertemuan berikutnya.
+        </p>
+
+        <!-- Box Rekapitulasi Sesi -->
+        <div class="recap-table-box">
+          <h3>
+            <span>📝</span> Aktivitas yang Telah Dicatat Hari Ini (<span id="closing-total-count">0</span>)
+          </h3>
+          <ul id="closing-recap-list" class="recap-list"></ul>
+        </div>
+
+        <!-- Tabel Cetak Khusus Print Stylesheet -->
+        <table class="print-eval-table" aria-label="Tabel Evaluasi Cetak">
+          <thead>
+            <tr>
+              <th style="width: 40px;">No</th>
+              <th>Nama Aktivitas Latihan</th>
+              <th>Kode Murid</th>
+              <th>Tingkat Bantuan</th>
+              <th>Ketepatan</th>
+              <th>Kondisi Tangan</th>
+              <th>Catatan Observasi & Tindak Lanjut</th>
+            </tr>
+          </thead>
+          <tbody id="print-table-body"></tbody>
+        </table>
+
+        <!-- Kolom Tanda Tangan Cetak -->
+        <div class="signature-area">
+          <div class="signature-col">
+            <p>Mengetahui,</p>
+            <p style="font-weight: bold;">Guru Pembimbing / Terapis</p>
+            <div class="signature-line"></div>
+            <p style="margin-top: 4px;">Nama Terang & NIP</p>
+          </div>
+          <div class="signature-col">
+            <p>Tanggal: ..............................</p>
+            <p style="font-weight: bold;">Pendamping Sesi</p>
+            <div class="signature-line"></div>
+            <p style="margin-top: 4px;">Tanda Tangan</p>
+          </div>
+        </div>
+
+        <!-- Tombol Aksi Layar -->
+        <div class="closing-actions">
+          <button id="closing-continue-btn" class="btn btn-primary btn-large">
+            Pilih Latihan Lain
+          </button>
+          <button id="print-recap-btn" class="btn btn-secondary btn-large">
+            🖨️ Cetak / Simpan PDF
+          </button>
+          <button id="csv-recap-btn" class="btn btn-outline btn-large">
+            📥 Unduh Rekap (CSV)
+          </button>
+          <button id="closing-home-btn" class="btn btn-outline btn-large">
+            Kembali ke Beranda
+          </button>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       MODAL DIALOG: FORM EVALUASI & PENCATATAN GURU
+       ====================================================================== -->
+  <div id="eval-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title">Lembar Catatan Evaluasi Pendamping</h3>
+        <button id="modal-close-btn" class="btn btn-icon-only" style="color: #fff; background: transparent;" aria-label="Tutup form evaluasi">
+          ✕
+        </button>
+      </div>
+
+      <form id="eval-form">
+        <div class="modal-body">
+          <div style="background-color: var(--cat-a-bg); padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: 20px;">
+            <strong style="color: var(--color-primary);">Latihan yang dikerjakan:</strong>
+            <p id="modal-exercise-title" style="font-weight: 800; font-size: 1.05rem;"></p>
+          </div>
+
+          <input type="hidden" id="eval-exercise-id" name="exerciseId">
+          <input type="hidden" id="eval-exercise-title" name="exerciseTitle">
+          <input type="hidden" id="eval-category-title" name="categoryTitle">
+
+          <!-- Identitas Sesi -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="eval-student-code">Kode Murid (Anonim)</label>
+              <input type="text" id="eval-student-code" name="studentCode" class="form-input" placeholder="Contoh: Siswa-11A" value="Siswa-11A" required>
+            </div>
+            <div class="form-group">
+              <label for="eval-teacher-name">Nama Guru / Pendamping</label>
+              <input type="text" id="eval-teacher-name" name="teacherName" class="form-input" placeholder="Nama Guru" value="Guru Pendamping" required>
+            </div>
+          </div>
+
+          <!-- Parameter 1: Tugas Dilakukan -->
+          <div class="form-group">
+            <label>Apakah Tugas Berhasil Dilakukan?</label>
+            <div class="radio-cards-grid">
+              <label class="radio-card-label">
+                <input type="radio" name="taskExecution" value="Ya" checked> Ya
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="taskExecution" value="Sebagian"> Sebagian
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="taskExecution" value="Belum"> Belum
+              </label>
+            </div>
+          </div>
+
+          <!-- Parameter 2: Tingkat Bantuan -->
+          <div class="form-group">
+            <label>Tingkat Bantuan (*Prompting Hierarchy*)</label>
+            <div class="radio-cards-grid">
+              <label class="radio-card-label">
+                <input type="radio" name="assistanceLevel" value="Mandiri" checked> Mandiri
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="assistanceLevel" value="Petunjuk Visual"> Petunjuk Visual
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="assistanceLevel" value="Petunjuk Verbal"> Petunjuk Verbal
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="assistanceLevel" value="Bantuan Fisik"> Bantuan Fisik
+              </label>
+            </div>
+          </div>
+
+          <!-- Parameter 3: Ketepatan Gerakan -->
+          <div class="form-group">
+            <label>Ketepatan Gerakan</label>
+            <div class="radio-cards-grid">
+              <label class="radio-card-label">
+                <input type="radio" name="movementAccuracy" value="Baik" checked> Baik
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="movementAccuracy" value="Berkembang"> Berkembang
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="movementAccuracy" value="Perlu Bantuan Lanjut"> Perlu Bantuan
+              </label>
+            </div>
+          </div>
+
+          <!-- Parameter 4: Kondisi Tangan -->
+          <div class="form-group">
+            <label>Kondisi Tangan & Respon Fisik</label>
+            <div class="radio-cards-grid">
+              <label class="radio-card-label">
+                <input type="radio" name="handCondition" value="Nyaman" checked> Nyaman
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="handCondition" value="Lelah"> Lelah
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="handCondition" value="Tidak Nyaman"> Tidak Nyaman
+              </label>
+              <label class="radio-card-label">
+                <input type="radio" name="handCondition" value="Nyeri"> Nyeri
+              </label>
+            </div>
+          </div>
+
+          <!-- Parameter 5: Tindak Lanjut -->
+          <div class="form-group">
+            <label for="eval-follow-up">Rekomendasi Tindak Lanjut Sesi Berikutnya</label>
+            <select id="eval-follow-up" name="followUpAction" class="form-select">
+              <option value="Lanjutkan">Lanjutkan ke Modul Lain</option>
+              <option value="Ulangi">Ulangi Modul Ini</option>
+              <option value="Sederhanakan">Sederhanakan Bentuk Gerakan</option>
+              <option value="Hentikan & Evaluasi">Hentikan & Konsultasikan ke Terapis</option>
+            </select>
+          </div>
+
+          <!-- Parameter 6: Catatan Observasi Bebas -->
+          <div class="form-group">
+            <label for="eval-notes">Catatan Observasi Khusus Guru</label>
+            <textarea id="eval-notes" name="qualitativeNotes" class="form-textarea" placeholder="Tuliskan respon murid, kestabilan lengan, atau alat penunjang yang dipakai..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="modal-cancel-btn" class="btn btn-outline">
+            Batal
+          </button>
+          <button type="submit" class="btn btn-success btn-large">
+            Simpan Hasil & Selesaikan Latihan
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Situs -->
+  <footer class="site-footer">
+    <p>Program Bina Gerak Motorik Halus Anggota Gerak Atas • Berbasis Aktivitas Fisik & Observasi Nyata</p>
+    <p style="margin-top: 4px; font-size: 0.8rem; color: #94a3b8;">Tidak menggantikan asesmen medis atau fisioterapi klinis formal.</p>
+  </footer>
+
+  <!-- Script Aplikasi -->
+  <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>

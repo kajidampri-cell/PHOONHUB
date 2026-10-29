@@ -1,0 +1,78 @@
+:root {
+  /* Palet Warna Utama - Ergonomis & Kontras Tinggi (WCAG AAA/AA) */
+  --color-primary: #1e3a8a;          /* Deep Blue Slate */
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #172554;
+  --color-primary-contrast: #ffffff;
+
+  --color-secondary: #0f766e;        /* Calming Deep Teal */
+  --color-secondary-light: #ccfbf1;
+  --color-secondary-hover: #115e59;
+
+  /* Kategori Identitas */
+  --cat-a-accent: #2563eb;          /* Biru: Kesiapan Menulis */
+  --cat-a-bg: #eff6ff;
+  --cat-a-border: #bfdbfe;
+
+  --cat-b-accent: #059669;          /* Hijau: Kekuatan Genggaman */
+  --cat-b-bg: #f0fdf4;
+  --cat-b-border: #bbf7d0;
+
+  --cat-c-accent: #7c3aed;          /* Ungu: Bina Diri Fungsional */
+  --cat-c-bg: #faf5ff;
+  --cat-c-border: #e9d5ff;
+
+  /* Status & Keselamatan */
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #f59e0b;
+  --color-warning-text: #92400e;
+
+  --color-success-bg: #f0fdf4;
+  --color-success-border: #22c55e;
+  --color-success-text: #166534;
+
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #ef4444;
+  --color-danger-text: #991b1b;
+
+  /* Permukaan & Latar Belakang */
+  --bg-app: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+
+  /* Teks */
+  --text-primary: #0f172a;          /* Sangat Kontras (16:1) */
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  /* Aksesibilitas Target Sentuh & Fokus */
+  --touch-target-min: 48px;
+  --focus-ring: 3px solid #2563eb;
+  --focus-offset: 3px;
+
+  /* Radius & Bayangan */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+
+  /* Transisi & Animasi */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

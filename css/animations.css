@@ -1,0 +1,456 @@
+/* ==========================================================================
+   ANIMASI 2D REALISTIS GERAKAN TANGAN & ALAT (LATIHAN MOTORIK HALUS)
+   Berbasis GPU Transform & Keyframe Halus 60FPS
+   ========================================================================== */
+
+/* Pengaturan Animasi Global */
+.anim-svg-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anim-svg-wrapper svg {
+  overflow: visible;
+  filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.08));
+}
+
+/* Pause animation class */
+.animation-paused * {
+  animation-play-state: paused !important;
+}
+
+/* -------------------------------------------------------------
+   01. ROLLING PENCIL (Menggulingkan Pensil)
+   ------------------------------------------------------------- */
+@keyframes pencilRoll {
+  0%, 100% {
+    transform: translateX(0px) rotate(-15deg);
+  }
+  50% {
+    transform: translateX(35px) rotate(45deg);
+  }
+}
+
+@keyframes fingersRolling {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(30px) translateY(-2px);
+  }
+}
+
+.anim-pencil-body {
+  transform-origin: 180px 110px;
+  animation: pencilRoll 3s ease-in-out infinite;
+}
+
+.anim-pencil-fingers {
+  animation: fingersRolling 3s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   02. RUBBER BAND EXTENSION (Membuka Jari dengan Karet)
+   ------------------------------------------------------------- */
+@keyframes thumbSpread {
+  0%, 100% { transform: rotate(-35deg) translate(0, 0); }
+  50% { transform: rotate(-55deg) translate(-14px, -10px); }
+}
+
+@keyframes indexSpread {
+  0%, 100% { transform: rotate(-15deg) translate(0, 0); }
+  50% { transform: rotate(-28deg) translate(-10px, -18px); }
+}
+
+@keyframes middleSpread {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes ringSpread {
+  0%, 100% { transform: rotate(15deg) translate(0, 0); }
+  50% { transform: rotate(28deg) translate(10px, -18px); }
+}
+
+@keyframes pinkySpread {
+  0%, 100% { transform: rotate(35deg) translate(0, 0); }
+  50% { transform: rotate(55deg) translate(14px, -10px); }
+}
+
+@keyframes rubberBandStretch {
+  0%, 100% {
+    transform: scale(1);
+    stroke-width: 4px;
+    stroke: #dc2626;
+  }
+  50% {
+    transform: scale(1.32);
+    stroke-width: 2.5px;
+    stroke: #ef4444;
+  }
+}
+
+.anim-finger-thumb { transform-origin: 100px 90px; animation: thumbSpread 2.8s ease-in-out infinite; }
+.anim-finger-index { transform-origin: 120px 60px; animation: indexSpread 2.8s ease-in-out infinite; }
+.anim-finger-middle { transform-origin: 150px 70px; animation: middleSpread 2.8s ease-in-out infinite; }
+.anim-finger-ring { transform-origin: 175px 60px; animation: ringSpread 2.8s ease-in-out infinite; }
+.anim-finger-pinky { transform-origin: 200px 75px; animation: pinkySpread 2.8s ease-in-out infinite; }
+.anim-rubber-band { transform-origin: 150px 90px; animation: rubberBandStretch 2.8s ease-in-out infinite; }
+
+/* -------------------------------------------------------------
+   03. PICK UP THE COINS (Mengambil Koin)
+   ------------------------------------------------------------- */
+@keyframes pincerPickAndLift {
+  0%, 10% {
+    transform: translate(0, -35px); /* Di atas meja */
+  }
+  25%, 45% {
+    transform: translate(0, 0px); /* Menyentuh koin di meja */
+  }
+  65%, 85% {
+    transform: translate(0, -42px); /* Mengangkat koin ke atas */
+  }
+  100% {
+    transform: translate(0, -35px);
+  }
+}
+
+@keyframes coinLiftState {
+  0%, 25% {
+    transform: translate(0, 0px);
+    opacity: 0.8;
+  }
+  45%, 85% {
+    transform: translate(0, -42px);
+    opacity: 1;
+    filter: drop-shadow(0 10px 8px rgba(0,0,0,0.2));
+  }
+  100% {
+    transform: translate(0, -35px);
+  }
+}
+
+.anim-pincer-hand {
+  transform-origin: 150px 110px;
+  animation: pincerPickAndLift 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.anim-target-coin {
+  transform-origin: 150px 140px;
+  animation: coinLiftState 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* -------------------------------------------------------------
+   04. PUT OFF THE COINS (Melepas Koin Satu per Satu)
+   ------------------------------------------------------------- */
+@keyframes coinSlideDrop {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  15% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(50px, 20px);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(75px, 60px) rotate(20deg);
+    opacity: 1;
+  }
+  85%, 100% {
+    transform: translate(75px, 65px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.anim-sliding-coin {
+  transform-origin: 106px 94px;
+  animation: coinSlideDrop 3s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   05. PENCIL CRAWLS (Merayapkan Jari di Pensil)
+   ------------------------------------------------------------- */
+@keyframes fingersCrawlStep {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(25px, -15px);
+  }
+  50% {
+    transform: translate(55px, -32px);
+  }
+  75% {
+    transform: translate(25px, -15px);
+  }
+}
+
+.anim-crawl-fingers {
+  animation: fingersCrawlStep 3.5s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   06. SPONGE SQUEEZING (Meremas Spons)
+   ------------------------------------------------------------- */
+@keyframes spongeCompress {
+  0%, 100% {
+    transform: scale(1);
+  }
+  45%, 65% {
+    transform: scale(0.65, 0.68);
+  }
+}
+
+@keyframes fingersGrip {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  45%, 65% {
+    transform: translateY(14px) scale(0.92);
+  }
+}
+
+.anim-sponge-body {
+  transform-origin: 0px 0px;
+  animation: spongeCompress 2.6s ease-in-out infinite;
+}
+
+.anim-sponge-fingers {
+  animation: fingersGrip 2.6s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   07. CLOTHESPIN CLIPPING (Menjepit Penjepit Baju)
+   ------------------------------------------------------------- */
+@keyframes pegLeverPress {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  40%, 70% {
+    transform: rotate(-14deg);
+  }
+}
+
+@keyframes pegLeverBottom {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  40%, 70% {
+    transform: rotate(14deg);
+  }
+}
+
+@keyframes pegWholeShift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  40%, 70% {
+    transform: translate(-18px, 0);
+  }
+}
+
+.anim-peg-top { transform-origin: 15px 30px; animation: pegLeverPress 3s ease-in-out infinite; }
+.anim-peg-bottom { transform-origin: 15px 30px; animation: pegLeverBottom 3s ease-in-out infinite; }
+.anim-peg-group { animation: pegWholeShift 3s ease-in-out infinite; }
+
+/* -------------------------------------------------------------
+   08. PUTTY PINCHING (Mencubit Plastisin Lunak)
+   ------------------------------------------------------------- */
+@keyframes puttyDeform {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  45%, 65% {
+    transform: scale(1.15, 0.75);
+  }
+}
+
+@keyframes pinchFingers {
+  0%, 100% {
+    transform: translateY(-8px);
+  }
+  45%, 65% {
+    transform: translateY(12px);
+  }
+}
+
+.anim-putty-dough {
+  transform-origin: 150px 155px;
+  animation: puttyDeform 2.8s ease-in-out infinite;
+}
+
+.anim-pinch-fingers {
+  animation: pinchFingers 2.8s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   09. TWEEZER TRANSFER (Pindah Benda dg Penjepit)
+   ------------------------------------------------------------- */
+@keyframes tweezerFlight {
+  0% {
+    transform: translate(-70px, 45px); /* Ambil di mangkuk kiri */
+  }
+  20% {
+    transform: translate(-70px, 0px); /* Angkat dari mangkuk kiri */
+  }
+  50% {
+    transform: translate(65px, -15px); /* Melayang ke kanan */
+  }
+  70% {
+    transform: translate(65px, 45px); /* Turun di mangkuk kanan */
+  }
+  85% {
+    transform: translate(65px, 45px); /* Lepas */
+  }
+  100% {
+    transform: translate(-70px, 45px); /* Kembali */
+  }
+}
+
+@keyframes pompomCarried {
+  0%, 75% {
+    opacity: 1;
+  }
+  76%, 100% {
+    opacity: 0;
+  }
+}
+
+.anim-tweezer-arm {
+  transform-origin: 0 0;
+  animation: tweezerFlight 4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.anim-carried-pompom {
+  animation: pompomCarried 4s infinite;
+}
+
+/* -------------------------------------------------------------
+   10. BEAD THREADING (Meronce Manik-Manik)
+   ------------------------------------------------------------- */
+@keyframes beadThreading {
+  0% {
+    transform: translate(25px, 0);
+  }
+  30% {
+    transform: translate(-10px, 0); /* Menembus ujung tali */
+  }
+  70% {
+    transform: translate(-95px, 18px); /* Meluncur sepanjang tali */
+  }
+  85%, 100% {
+    transform: translate(-95px, 18px);
+    opacity: 0.9;
+  }
+}
+
+.anim-threading-bead {
+  animation: beadThreading 3.5s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   11. BOTTLE CAP TWISTING (Memutar Tutup Botol)
+   ------------------------------------------------------------- */
+@keyframes capTwist {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  35%, 60% {
+    transform: rotate(-35deg) translateY(-8px); /* Terbuka terangkat */
+  }
+  75%, 90% {
+    transform: rotate(0deg) translateY(0); /* Menutup kembali */
+  }
+}
+
+.anim-bottle-cap {
+  transform-origin: 150px 83px;
+  animation: capTwist 3s ease-in-out infinite;
+}
+
+/* -------------------------------------------------------------
+   12. BUTTONING PRACTICE (Latihan Mengancingkan Baju)
+   ------------------------------------------------------------- */
+@keyframes buttonSlideHole {
+  0%, 100% {
+    transform: translate(15px, 0) rotate(0deg);
+  }
+  35% {
+    transform: translate(0px, 0) rotate(45deg); /* Miring masuk lubang */
+  }
+  65%, 85% {
+    transform: translate(-20px, 0) rotate(0deg); /* Lolos ke balik kain */
+  }
+}
+
+.anim-button-piece {
+  transform-origin: 0px 0px;
+  animation: buttonSlideHole 3.2s ease-in-out infinite;
+}
+
+/* Kartu Kategori dengan Banner Animasi */
+.activity-card-thumb {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: var(--radius-md);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  position: relative;
+}
+
+.activity-card-thumb svg {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.anim-badge-indicator {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(30, 58, 138, 0.9);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(2px);
+  z-index: 2;
+}
+
+.anim-pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+/* Kontrol Animasi Play / Pause */
+.anim-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}

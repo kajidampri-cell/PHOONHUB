@@ -1,0 +1,71 @@
+<svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi Realistis Gaya Komik: Menjepit Penjepit Baju">
+  <defs>
+    <filter id="shadow07" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#8a3818" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background Warm Cream -->
+  <rect width="400" height="400" fill="#faede4"/>
+
+  <!-- Tepi Karton Tebal Bertekstur -->
+  <g transform="translate(60, 160)">
+    <rect x="0" y="0" width="130" height="180" rx="4" fill="#a7f3d0" stroke="#18181b" stroke-width="3"/>
+    <line x1="8" y1="0" x2="8" y2="180" stroke="#059669" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="25" y="90" fill="#065f46" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800">KARTON</text>
+  </g>
+
+  <!-- Bayangan Tangan & Penjepit -->
+  <ellipse cx="230" cy="330" rx="90" ry="22" fill="#cbb5a4" opacity="0.6"/>
+
+  <!-- Penjepit Baju Kayu Realistis Cel-Shaded -->
+  <g transform="translate(170, 150)">
+    <!-- Rahang Bawah -->
+    <path d="M -15 35 L 45 65 L 60 55 L 0 25 Z" fill="#d97706" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 0 25 L 45 65 L 60 55" fill="#b45309"/>
+    <!-- Rahang Atas (Tertekan Terbuka) -->
+    <path d="M -15 15 L 45 -15 L 60 -5 L 0 25 Z" fill="#f59e0b" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Per Pegas Logam dengan Bayangan -->
+    <circle cx="20" cy="25" r="12" fill="#9ca3af" stroke="#18181b" stroke-width="3"/>
+    <circle cx="20" cy="25" r="6" fill="#4b5563" stroke="#18181b" stroke-width="2"/>
+    <path d="M 12 18 L 8 8" stroke="#18181b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 28 32 L 32 42" stroke="#18181b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Anatomi Tangan Manusia Gaya Komik (Referensi WA Image) -->
+  <g filter="url(#shadow07)">
+    <!-- Lengan & Pergelangan -->
+    <path d="M 390 320 C 350 280, 310 240, 275 210 C 260 195, 245 180, 230 165 C 220 155, 210 145, 195 130 C 180 115, 170 125, 185 145 C 200 165, 215 185, 235 210 C 255 235, 280 270, 310 310 C 335 340, 360 370, 400 390 Z" fill="#d57c4f"/>
+    <!-- Telapak Tangan & Punggung Dasar -->
+    <path d="M 380 310 C 330 260, 280 210, 240 180 C 220 165, 205 145, 185 130 C 175 120, 165 130, 180 150 C 195 170, 215 195, 235 220 C 260 250, 290 290, 330 330 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3.5" stroke-linejoin="round"/>
+    
+    <!-- Ibu Jari (Menekan Pangkal Bawah) -->
+    <!-- Cel-shading Ibu Jari -->
+    <path d="M 205 190 C 215 200, 225 210, 230 205 C 235 200, 230 185, 220 175 Z" fill="#8a3818"/>
+    <path d="M 195 180 C 210 195, 225 205, 235 195 C 240 185, 230 170, 215 160 C 205 155, 190 165, 195 180 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Kuku Ibu Jari -->
+    <ellipse cx="228" cy="195" rx="5" ry="4" fill="#fef3ec" stroke="#18181b" stroke-width="2"/>
+    <!-- Kerut Lipatan Kulit Jempol -->
+    <path d="M 215 175 Q 218 180 215 185" stroke="#18181b" stroke-width="1.8" fill="none"/>
+    <path d="M 210 172 Q 213 177 210 182" stroke="#18181b" stroke-width="1.8" fill="none"/>
+
+    <!-- Jari Telunjuk (Menekan Pangkal Atas) -->
+    <path d="M 205 130 C 215 115, 225 110, 230 115 C 235 120, 230 135, 215 145 Z" fill="#f6c49f" stroke="#18181b" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Kuku Telunjuk -->
+    <ellipse cx="225" cy="115" rx="5" ry="4" fill="#fef3ec" stroke="#18181b" stroke-width="2"/>
+    <!-- Kerut Lipatan Telunjuk -->
+    <path d="M 218 128 Q 220 133 218 138" stroke="#18181b" stroke-width="1.8" fill="none"/>
+
+    <!-- Jari Tengah, Manis & Kelingking Menggenggam Relaks -->
+    <path d="M 240 220 C 255 240, 275 250, 270 260 C 265 270, 245 260, 235 245 Z" fill="#d57c4f" stroke="#18181b" stroke-width="3"/>
+    <path d="M 260 250 C 275 270, 290 280, 285 290 C 280 300, 260 290, 250 275 Z" fill="#d57c4f" stroke="#18181b" stroke-width="3"/>
+
+    <!-- Garis Arsiran Komik Realistis (Hatching) -->
+    <g stroke="#18181b" stroke-width="1.5" stroke-linecap="round">
+      <line x1="280" y1="230" x2="295" y2="240"/>
+      <line x1="275" y1="238" x2="290" y2="248"/>
+      <line x1="270" y1="246" x2="285" y2="256"/>
+      <line x1="320" y1="280" x2="340" y2="295"/>
+      <line x1="315" y1="290" x2="335" y2="305"/>
+    </g>
+  </g>
+</svg>
