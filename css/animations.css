@@ -395,11 +395,11 @@
   animation: buttonSlideHole 3.2s ease-in-out infinite;
 }
 
-/* Kartu Kategori dengan Banner Animasi */
+/* Kartu Kategori dengan Banner Ilustrasi */
 .activity-card-thumb {
   width: 100%;
-  height: 140px;
-  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  height: 180px;
+  background: #f8fafc;
   border-radius: var(--radius-md);
   margin-bottom: 14px;
   display: flex;
@@ -413,6 +413,21 @@
 .activity-card-thumb svg {
   max-width: 90%;
   max-height: 90%;
+}
+
+.activity-card-thumb img,
+.activity-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.activity-card:hover .activity-card-thumb img,
+.activity-card:hover .activity-card-img {
+  transform: scale(1.04);
 }
 
 .anim-badge-indicator {

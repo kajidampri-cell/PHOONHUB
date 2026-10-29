@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Master Data: 3 Kategori & 12 Modul Aktivitas Latihan Motorik Halus
  * Berdasarkan: Naskah Lengkap Website Bina Gerak Motorik Halus
  * Dilengkapi Grafis Ilustrasi Vektor 2D Animasi Realistis (Hand & Object Physics)
@@ -47,36 +47,48 @@ export const EXERCISES = [
     studentText: 'Ayo gerakkan pensil menggunakan jari tanganmu.',
     goal: 'Mengembangkan kontrol gerakan jari ketika mengubah posisi pensil.',
     tools: ['Satu batang pensil yang nyaman digenggam (tidak licin)'],
+    imageSrc: 'assets/illustrations/01_menggulingkan_pensil.png',
+    image: 'assets/illustrations/01_menggulingkan_pensil.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan lengan pada meja dalam posisi nyaman.',
         visualCue: 'Lengan bertumpu stabil di atas meja dengan rileks.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step01_lengan_posisi_awal.png',
+        image: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step01_lengan_posisi_awal.png'
       },
       {
         number: 2,
         instruction: 'Pegang pensil menggunakan jari yang biasa dipakai untuk menulis.',
         visualCue: 'Ibu jari, telunjuk, dan jari tengah memegang batang pensil.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step02_memegang_pensil.png',
+        image: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step02_memegang_pensil.png'
       },
       {
         number: 3,
         instruction: 'Gulingkan atau putar pensil perlahan menggunakan jari, sesuai gambar contoh.',
         visualCue: 'Gerakkan ujung jari ke depan dan ke belakang untuk memutar pensil.',
-        actionType: 'gerak'
+        actionType: 'gerak',
+        imageSrc: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step03_memutar_pensil.png',
+        image: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step03_memutar_pensil.png'
       },
       {
         number: 4,
         instruction: 'Usahakan pensil tetap berada dalam kendali tangan.',
         visualCue: 'Jaga pensil agar tidak terjatuh atau meluncur lepas.',
-        actionType: 'kontrol'
+        actionType: 'kontrol',
+        imageSrc: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step04_menjaga_pensil_dalam_kendali.png',
+        image: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step04_menjaga_pensil_dalam_kendali.png'
       },
       {
         number: 5,
         instruction: 'Kembalikan pensil ke posisi awal, lalu ulangi sesuai arahan pendamping.',
         visualCue: 'Putar balik pensil ke posisi semula secara perlahan.',
-        actionType: 'ulang'
+        actionType: 'ulang',
+        imageSrc: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step05_mengembalikan_pensil_ke_awal.png',
+        image: 'assets/illustrations/steps/ex01_menggulingkan_pensil_step05_mengembalikan_pensil_ke_awal.png'
       }
     ],
     teacherGuide: {
@@ -162,36 +174,48 @@ export const EXERCISES = [
     studentText: 'Ayo buka jari secara perlahan.',
     goal: 'Melatih gerakan membuka jari secara terarah dengan tahanan yang sesuai.',
     tools: ['Karet latihan elastis dengan tahanan sangat ringan dan ukuran yang sesuai'],
+    imageSrc: 'assets/illustrations/02_membuka_jari_dengan_karet.png',
+    image: 'assets/illustrations/02_membuka_jari_dengan_karet.png',
     steps: [
       {
         number: 1,
         instruction: 'Duduk dengan tangan ditopang dalam posisi nyaman.',
         visualCue: 'Siku dan lengan diletakkan stabil di atas meja.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step01_posisi_tangan_nyaman.png',
+        image: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step01_posisi_tangan_nyaman.png'
       },
       {
         number: 2,
         instruction: 'Dengan bantuan pendamping, pasang karet pada jari sesuai gambar; pastikan tidak terlalu ketat.',
         visualCue: 'Karet melingkar di sekeliling 5 jari tangan.',
-        actionType: 'alat'
+        actionType: 'alat',
+        imageSrc: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step02_memasang_karet_di_jari.png',
+        image: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step02_memasang_karet_di_jari.png'
       },
       {
         number: 3,
         instruction: 'Buka jari perlahan sampai batas gerak yang nyaman.',
         visualCue: 'Rentangkan jari ke luar melawan tahanan lembut karet.',
-        actionType: 'gerak'
+        actionType: 'gerak',
+        imageSrc: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step03_membuka_jari.png',
+        image: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step03_membuka_jari.png'
       },
       {
         number: 4,
         instruction: 'Tutup kembali jari secara terkendali.',
         visualCue: 'Rapatkan kembali jari ke posisi santai.',
-        actionType: 'kontrol'
+        actionType: 'kontrol',
+        imageSrc: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step04_merapatkan_jari.png',
+        image: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step04_merapatkan_jari.png'
       },
       {
         number: 5,
         instruction: 'Ulangi hanya selama gerakan tetap nyaman.',
         visualCue: 'Lakukan beberapa kali; berhenti bila terasa lelah.',
-        actionType: 'ulang'
+        actionType: 'ulang',
+        imageSrc: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step05_mengulangi_gerakan_nyaman.png',
+        image: 'assets/illustrations/steps/ex02_membuka_jari_dengan_karet_step05_mengulangi_gerakan_nyaman.png'
       }
     ],
     teacherGuide: {
@@ -264,36 +288,48 @@ export const EXERCISES = [
     studentText: 'Ambil benda satu per satu dengan jari tanganmu.',
     goal: 'Melatih gerakan menjepit benda pipih dan memindahkan benda dari meja ke tangan.',
     tools: ['Beberapa koin atau keping pipih berukuran aman', 'Alas meja tidak licin'],
+    imageSrc: 'assets/illustrations/03_mengambil_koin.png',
+    image: 'assets/illustrations/03_mengambil_koin.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan beberapa keping di atas meja dengan jarak yang mudah dijangkau.',
         visualCue: 'Koin tersebar teratur di hadapan tangan aktif.',
-        actionType: 'persiapan'
+        actionType: 'persiapan',
+        imageSrc: 'assets/illustrations/steps/ex03_mengambil_koin_step01_menata_koin_di_meja.png',
+        image: 'assets/illustrations/steps/ex03_mengambil_koin_step01_menata_koin_di_meja.png'
       },
       {
         number: 2,
         instruction: 'Dekatkan tangan ke keping pertama.',
         visualCue: 'Arahkan telapak dan jari mendekati tepi koin.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex03_mengambil_koin_step02_mendekat_ke_koin.png',
+        image: 'assets/illustrations/steps/ex03_mengambil_koin_step02_mendekat_ke_koin.png'
       },
       {
         number: 3,
         instruction: 'Jepit keping dengan ibu jari dan telunjuk atau kombinasi jari yang paling fungsional.',
         visualCue: 'Gunakan ujung ibu jari dan telunjuk (pincer grasp).',
-        actionType: 'jepit'
+        actionType: 'jepit',
+        imageSrc: 'assets/illustrations/steps/ex03_mengambil_koin_step03_menjepit_koin.png',
+        image: 'assets/illustrations/steps/ex03_mengambil_koin_step03_menjepit_koin.png'
       },
       {
         number: 4,
         instruction: 'Angkat keping secara perlahan.',
         visualCue: 'Angkat koin ke atas tanpa terlepas dari jepitan.',
-        actionType: 'angkat'
+        actionType: 'angkat',
+        imageSrc: 'assets/illustrations/steps/ex03_mengambil_koin_step04_mengangkat_koin.png',
+        image: 'assets/illustrations/steps/ex03_mengambil_koin_step04_mengangkat_koin.png'
       },
       {
         number: 5,
         instruction: 'Pindahkan keping ke telapak tangan atau wadah sesuai kemampuan, kemudian lanjutkan ke keping berikutnya.',
         visualCue: 'Kumpulkan koin ke telapak atau masukkan ke mangkuk.',
-        actionType: 'kumpul'
+        actionType: 'kumpul',
+        imageSrc: 'assets/illustrations/steps/ex03_mengambil_koin_step05_memindahkan_koin_ke_wadah.png',
+        image: 'assets/illustrations/steps/ex03_mengambil_koin_step05_memindahkan_koin_ke_wadah.png'
       }
     ],
     teacherGuide: {
@@ -366,36 +402,48 @@ export const EXERCISES = [
     studentText: 'Sekarang keluarkan keping dari tanganmu satu per satu.',
     goal: 'Melatih pemindahan benda dari telapak tangan menuju ujung jari serta pelepasan yang terkendali.',
     tools: ['Beberapa koin atau keping aman', 'Wadah yang stabil / meja'],
+    imageSrc: 'assets/illustrations/04_melepaskan_koin_satu_per_satu.png',
+    image: 'assets/illustrations/04_melepaskan_koin_satu_per_satu.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan beberapa keping dalam telapak tangan sesuai kemampuan.',
         visualCue: 'Koin digenggam longgar dalam telapak tangan.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step01_koin_di_tangan.png',
+        image: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step01_koin_di_tangan.png'
       },
       {
         number: 2,
         instruction: 'Tahan keping lainnya agar tidak langsung terjatuh.',
         visualCue: 'Jari kelingking dan jari manis menahan keping cadangan.',
-        actionType: 'tahan'
+        actionType: 'tahan',
+        imageSrc: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step02_menahan_koin_cadangan.png',
+        image: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step02_menahan_koin_cadangan.png'
       },
       {
         number: 3,
         instruction: 'Gerakkan satu keping menuju ujung jari.',
         visualCue: 'Dorong koin perlahan dari telapak ke jempol-telunjuk.',
-        actionType: 'geser'
+        actionType: 'geser',
+        imageSrc: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step03_menggeser_koin_ke_ujung_jari.png',
+        image: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step03_menggeser_koin_ke_ujung_jari.png'
       },
       {
         number: 4,
         instruction: 'Letakkan keping pada meja atau wadah dengan perlahan.',
         visualCue: 'Buka jepitan dan turunkan koin ke permukaan.',
-        actionType: 'lepas'
+        actionType: 'lepas',
+        imageSrc: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step04_meletakkan_koin_ke_wadah.png',
+        image: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step04_meletakkan_koin_ke_wadah.png'
       },
       {
         number: 5,
         instruction: 'Lakukan kembali sampai keping yang disiapkan telah dipindahkan.',
         visualCue: 'Ulangi untuk koin berikutnya tanpa menjatuhkan semuanya.',
-        actionType: 'selesai'
+        actionType: 'selesai',
+        imageSrc: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step05_mengulangi_pemindahan_koin.png',
+        image: 'assets/illustrations/steps/ex04_melepaskan_koin_satu_per_satu_step05_mengulangi_pemindahan_koin.png'
       }
     ],
     teacherGuide: {
@@ -453,36 +501,48 @@ export const EXERCISES = [
     studentText: 'Ayo gerakkan jarimu menyusuri pensil.',
     goal: 'Melatih pengaturan posisi genggaman dengan gerakan jari sepanjang batang pensil.',
     tools: ['Satu pensil yang tidak terlalu licin dan aman digunakan'],
+    imageSrc: 'assets/illustrations/05_merayapkan_jari_di_pensil.png',
+    image: 'assets/illustrations/05_merayapkan_jari_di_pensil.png',
     steps: [
       {
         number: 1,
         instruction: 'Pegang pensil dengan ibu jari, telunjuk, dan jari tengah sesuai kemampuan.',
         visualCue: 'Pegang pensil pada bagian dekat penghapus/pangkal.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step01_memegang_pensil.png',
+        image: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step01_memegang_pensil.png'
       },
       {
         number: 2,
         instruction: 'Letakkan tangan dalam posisi yang nyaman.',
         visualCue: 'Lengan ditopang rileks di atas permukaan meja.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step02_posisi_tangan_nyaman.png',
+        image: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step02_posisi_tangan_nyaman.png'
       },
       {
         number: 3,
         instruction: 'Gerakkan jari sedikit demi sedikit menyusuri batang pensil.',
         visualCue: 'Jalankan jari secara bergantian seperti merayap.',
-        actionType: 'merayap'
+        actionType: 'merayap',
+        imageSrc: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step03_jari_merayap_di_pensil.png',
+        image: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step03_jari_merayap_di_pensil.png'
       },
       {
         number: 4,
         instruction: 'Lanjutkan gerakan ke arah ujung pensil tanpa melepas kendali.',
         visualCue: 'Terus merayap ke arah mata pensil secara perlahan.',
-        actionType: 'lanjut'
+        actionType: 'lanjut',
+        imageSrc: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step04_menuju_ujung_pensil.png',
+        image: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step04_menuju_ujung_pensil.png'
       },
       {
         number: 5,
         instruction: 'Ubah arah dan gerakkan jari kembali menuju posisi semula.',
         visualCue: 'Rayapkan jari mundur kembali ke pangkal pensil.',
-        actionType: 'putar-arah'
+        actionType: 'putar-arah',
+        imageSrc: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step05_kembali_ke_pangkal_pensil.png',
+        image: 'assets/illustrations/steps/ex05_merayapkan_jari_di_pensil_step05_kembali_ke_pangkal_pensil.png'
       }
     ],
     teacherGuide: {
@@ -545,36 +605,48 @@ export const EXERCISES = [
     studentText: 'Ayo remas spons, lalu lepaskan perlahan.',
     goal: 'Melatih gerakan menggenggam dan melepaskan benda lunak secara terkendali.',
     tools: ['Spons bersih dan lembut yang pas dengan ukuran tangan'],
+    imageSrc: 'assets/illustrations/06_meremas_spons.png',
+    image: 'assets/illustrations/06_meremas_spons.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan spons pada telapak tangan.',
         visualCue: 'Spons berada tepat di tengah telapak tangan terbuka.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex06_meremas_spons_step01_meletakkan_spons_di_tangan.png',
+        image: 'assets/illustrations/steps/ex06_meremas_spons_step01_meletakkan_spons_di_tangan.png'
       },
       {
         number: 2,
         instruction: 'Rapatkan jari mengelilingi spons.',
         visualCue: 'Tutup jari-jari tangan melingkari spons.',
-        actionType: 'genggam'
+        actionType: 'genggam',
+        imageSrc: 'assets/illustrations/steps/ex06_meremas_spons_step02_merapatkan_jari_ke_spons.png',
+        image: 'assets/illustrations/steps/ex06_meremas_spons_step02_merapatkan_jari_ke_spons.png'
       },
       {
         number: 3,
         instruction: 'Remas spons dengan tenaga yang nyaman.',
         visualCue: 'Tekan spons hingga mengecil secara terkontrol.',
-        actionType: 'remas'
+        actionType: 'remas',
+        imageSrc: 'assets/illustrations/steps/ex06_meremas_spons_step03_meremas_spons.png',
+        image: 'assets/illustrations/steps/ex06_meremas_spons_step03_meremas_spons.png'
       },
       {
         number: 4,
         instruction: 'Lepaskan tekanan dan buka genggaman perlahan.',
         visualCue: 'Buka kembali jari secara perlahan dan biarkan spons mengembang.',
-        actionType: 'lepas'
+        actionType: 'lepas',
+        imageSrc: 'assets/illustrations/steps/ex06_meremas_spons_step04_melepaskan_tekanan_spons.png',
+        image: 'assets/illustrations/steps/ex06_meremas_spons_step04_melepaskan_tekanan_spons.png'
       },
       {
         number: 5,
         instruction: 'Coba kembali sesuai arahan guru.',
         visualCue: 'Ulangi remas-lepas dengan tempo yang teratur.',
-        actionType: 'ulang'
+        actionType: 'ulang',
+        imageSrc: 'assets/illustrations/steps/ex06_meremas_spons_step05_mengulangi_remas_lepas.png',
+        image: 'assets/illustrations/steps/ex06_meremas_spons_step05_mengulangi_remas_lepas.png'
       }
     ],
     teacherGuide: {
@@ -639,36 +711,48 @@ export const EXERCISES = [
     studentText: 'Ayo pasang penjepit pada tepi karton.',
     goal: 'Melatih gerakan menjepit dan melepaskan tekanan pada benda dengan tepat.',
     tools: ['Penjepit baju per ringan yang mudah dibuka', 'Karton tebal atau papan bertepi aman'],
+    imageSrc: 'assets/illustrations/07_menjepit_penjepit_baju.png',
+    image: 'assets/illustrations/07_menjepit_penjepit_baju.png',
     steps: [
       {
         number: 1,
         instruction: 'Pegang penjepit baju dengan ibu jari dan jari lainnya.',
         visualCue: 'Jempol dan telunjuk memegang ujung pangkal penjepit.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step01_memegang_penjepit_baju.png',
+        image: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step01_memegang_penjepit_baju.png'
       },
       {
         number: 2,
         instruction: 'Tekan penjepit sampai bagian ujungnya terbuka.',
         visualCue: 'Tekan pangkal hingga mulut penjepit membuka lebar.',
-        actionType: 'tekan'
+        actionType: 'tekan',
+        imageSrc: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step02_membuka_penjepit_baju.png',
+        image: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step02_membuka_penjepit_baju.png'
       },
       {
         number: 3,
         instruction: 'Arahkan penjepit menuju tepi karton.',
         visualCue: 'Selipkan bibir penjepit ke sisi luar papan/karton.',
-        actionType: 'arah'
+        actionType: 'arah',
+        imageSrc: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step03_mengarahkan_ke_tepi_karton.png',
+        image: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step03_mengarahkan_ke_tepi_karton.png'
       },
       {
         number: 4,
         instruction: 'Lepaskan tekanan supaya penjepit terpasang.',
         visualCue: 'Lepaskan jari perlahan agar penjepit mengunci tepi karton.',
-        actionType: 'kunci'
+        actionType: 'kunci',
+        imageSrc: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step04_melepaskan_tekanan_penjepit.png',
+        image: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step04_melepaskan_tekanan_penjepit.png'
       },
       {
         number: 5,
         instruction: 'Ambil kembali penjepit dan ulangi sesuai kemampuan.',
         visualCue: 'Lepas kembali dan pasang di titik lainnya.',
-        actionType: 'ulang'
+        actionType: 'ulang',
+        imageSrc: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step05_mengulangi_pemasangan_penjepit.png',
+        image: 'assets/illustrations/steps/ex07_menjepit_penjepit_baju_step05_mengulangi_pemasangan_penjepit.png'
       }
     ],
     teacherGuide: {
@@ -718,36 +802,48 @@ export const EXERCISES = [
     studentText: 'Ayo bentuk plastisin menggunakan jari.',
     goal: 'Melatih penggunaan ujung jari untuk mencubit, menekan, dan mengubah bentuk benda lunak.',
     tools: ['Plastisin lunak, playdough, atau putty latihan yang bersih dan aman'],
+    imageSrc: 'assets/illustrations/08_mencubit_plastisin_lunak.png',
+    image: 'assets/illustrations/08_mencubit_plastisin_lunak.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan plastisin lunak di atas meja.',
         visualCue: 'Plastisin dibulatkan dan ditaruh di depan murid.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step01_meletakkan_plastisin.png',
+        image: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step01_meletakkan_plastisin.png'
       },
       {
         number: 2,
         instruction: 'Pegang sedikit plastisin menggunakan ibu jari dan telunjuk.',
         visualCue: 'Ujung jempol dan telunjuk menyentuh permukaan plastisin.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step02_memegang_plastisin.png',
+        image: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step02_memegang_plastisin.png'
       },
       {
         number: 3,
         instruction: 'Cubit atau tekan plastisin perlahan.',
         visualCue: 'Tekan kedua ujung jari hingga plastisin gepeng/tercubit.',
-        actionType: 'cubit'
+        actionType: 'cubit',
+        imageSrc: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step03_mencubit_plastisin.png',
+        image: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step03_mencubit_plastisin.png'
       },
       {
         number: 4,
         instruction: 'Lepaskan, lalu ulangi pada bagian lainnya.',
         visualCue: 'Pindah posisi cubitan ke sekeliling adonan plastisin.',
-        actionType: 'pindah'
+        actionType: 'pindah',
+        imageSrc: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step04_mengulangi_cubitan.png',
+        image: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step04_mengulangi_cubitan.png'
       },
       {
         number: 5,
         instruction: 'Coba bentuk bulatan kecil atau pipihkan plastisin bila memungkinkan.',
         visualCue: 'Ubah plastisin menjadi bulatan atau lempeng pipih.',
-        actionType: 'bentuk'
+        actionType: 'bentuk',
+        imageSrc: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step05_membentuk_plastisin.png',
+        image: 'assets/illustrations/steps/ex08_mencubit_plastisin_lunak_step05_membentuk_plastisin.png'
       }
     ],
     teacherGuide: {
@@ -799,36 +895,48 @@ export const EXERCISES = [
     studentText: 'Ayo pindahkan benda ke dalam wadah.',
     goal: 'Melatih koordinasi jari dan mata-tangan ketika menggunakan alat penjepit mekanik.',
     tools: ['Penjepit tumpul yang ringan/mudah ditekan', 'Pom-pom atau benda kecil ringan', 'Dua wadah kecil'],
+    imageSrc: 'assets/illustrations/09_memindahkan_benda_dengan_penjepit.png',
+    image: 'assets/illustrations/09_memindahkan_benda_dengan_penjepit.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan benda-benda ringan di wadah pertama.',
         visualCue: 'Wadah asal berisi 3-5 pom-pom empuk.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step01_menata_pom_pom_di_wadah.png',
+        image: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step01_menata_pom_pom_di_wadah.png'
       },
       {
         number: 2,
         instruction: 'Pegang penjepit dengan tangan yang digunakan beraktivitas.',
         visualCue: 'Pegang capit capit seperti memegang pensil.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step02_memegang_penjepit.png',
+        image: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step02_memegang_penjepit.png'
       },
       {
         number: 3,
         instruction: 'Buka penjepit dan arahkan ke satu benda.',
         visualCue: 'Arahkan ujung capit melingkari satu pom-pom.',
-        actionType: 'arah'
+        actionType: 'arah',
+        imageSrc: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step03_mengarahkan_penjepit_ke_pom_pom.png',
+        image: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step03_mengarahkan_penjepit_ke_pom_pom.png'
       },
       {
         number: 4,
         instruction: 'Jepit benda, angkat, lalu pindahkan menuju wadah kedua.',
         visualCue: 'Pertahankan jepitan sambil menggeser tangan ke wadah kedua.',
-        actionType: 'angkat'
+        actionType: 'angkat',
+        imageSrc: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step04_mengangkat_dan_memindahkan_pom_pom.png',
+        image: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step04_mengangkat_dan_memindahkan_pom_pom.png'
       },
       {
         number: 5,
         instruction: 'Lepaskan benda perlahan dan ulangi sesuai kemampuan.',
         visualCue: 'Buka capit dan jatuhkan pom-pom ke wadah tujuan.',
-        actionType: 'selesai'
+        actionType: 'selesai',
+        imageSrc: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step05_melepaskan_pom_pom_ke_wadah_tujuan.png',
+        image: 'assets/illustrations/steps/ex09_memindahkan_benda_dengan_penjepit_step05_melepaskan_pom_pom_ke_wadah_tujuan.png'
       }
     ],
     teacherGuide: {
@@ -879,36 +987,48 @@ export const EXERCISES = [
     studentText: 'Ayo masukkan manik-manik ke dalam tali.',
     goal: 'Melatih koordinasi mata-tangan dan penggunaan dua tangan dalam tugas fungsional.',
     tools: ['Manik-manik berukuran besar dengan lubang jelas', 'Tali yang ujungnya cukup kaku (berselotip)'],
+    imageSrc: 'assets/illustrations/10_meronce_manik_manik.png',
+    image: 'assets/illustrations/10_meronce_manik_manik.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan tali dan manik-manik pada meja yang stabil.',
         visualCue: 'Alat ditata rapi di atas alas antiselip.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex10_meronce_manik_manik_step01_menata_alat_meronce.png',
+        image: 'assets/illustrations/steps/ex10_meronce_manik_manik_step01_menata_alat_meronce.png'
       },
       {
         number: 2,
         instruction: 'Pegang tali dengan satu tangan atau gunakan bantuan penyangga.',
         visualCue: 'Tangan non-dominan (atau penyangga) menahan ujung tali.',
-        actionType: 'tahan'
+        actionType: 'tahan',
+        imageSrc: 'assets/illustrations/steps/ex10_meronce_manik_manik_step02_memegang_tali.png',
+        image: 'assets/illustrations/steps/ex10_meronce_manik_manik_step02_memegang_tali.png'
       },
       {
         number: 3,
         instruction: 'Ambil satu manik-manik dengan tangan yang lebih fungsional.',
         visualCue: 'Jepit manik dengan jari jempol dan telunjuk.',
-        actionType: 'ambil'
+        actionType: 'ambil',
+        imageSrc: 'assets/illustrations/steps/ex10_meronce_manik_manik_step03_memegang_manik_manik.png',
+        image: 'assets/illustrations/steps/ex10_meronce_manik_manik_step03_memegang_manik_manik.png'
       },
       {
         number: 4,
         instruction: 'Arahkan lubang manik-manik ke ujung tali.',
         visualCue: 'Sejajarkan lubang manik dengan ujung tali yang kaku.',
-        actionType: 'arah'
+        actionType: 'arah',
+        imageSrc: 'assets/illustrations/steps/ex10_meronce_manik_manik_step04_mengarahkan_lubang_manik_ke_tali.png',
+        image: 'assets/illustrations/steps/ex10_meronce_manik_manik_step04_mengarahkan_lubang_manik_ke_tali.png'
       },
       {
         number: 5,
         instruction: 'Masukkan manik-manik hingga melewati ujung tali; lanjutkan sesuai kemampuan.',
         visualCue: 'Dorong manik masuk dan tarik hingga ke pangkal tali.',
-        actionType: 'ronce'
+        actionType: 'ronce',
+        imageSrc: 'assets/illustrations/steps/ex10_meronce_manik_manik_step05_memasukkan_manik_ke_tali.png',
+        image: 'assets/illustrations/steps/ex10_meronce_manik_manik_step05_memasukkan_manik_ke_tali.png'
       }
     ],
     teacherGuide: {
@@ -956,36 +1076,48 @@ export const EXERCISES = [
     studentText: 'Ayo buka lalu tutup botol secara perlahan.',
     goal: 'Melatih putaran tangan/jari dan penggunaan tangan untuk aktivitas mandiri sehari-hari.',
     tools: ['Botol plastik stabil dengan tutup berukuran lebar/mudah digenggam', 'Alas antiselip'],
+    imageSrc: 'assets/illustrations/11_memutar_tutup_botol.png',
+    image: 'assets/illustrations/11_memutar_tutup_botol.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan botol pada meja yang stabil.',
         visualCue: 'Botol ditaruh di atas alas agar tidak mudah bergeser.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step01_meletakkan_botol_stabil.png',
+        image: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step01_meletakkan_botol_stabil.png'
       },
       {
         number: 2,
         instruction: 'Tahan botol dengan tangan lain, alat bantu, atau bantuan pendamping.',
         visualCue: 'Tangan kiri memeluk badan botol agar berdiri tegak.',
-        actionType: 'tahan'
+        actionType: 'tahan',
+        imageSrc: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step02_menahan_botol.png',
+        image: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step02_menahan_botol.png'
       },
       {
         number: 3,
         instruction: 'Pegang tutup botol menggunakan tangan yang lebih fungsional.',
         visualCue: 'Ibu jari dan jari-jari tangan kanan mencengkeram tutup botol.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step03_memegang_tutup_botol.png',
+        image: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step03_memegang_tutup_botol.png'
       },
       {
         number: 4,
         instruction: 'Putar tutup perlahan sampai terbuka.',
         visualCue: 'Putar berlawanan arah jarum jam hingga lepas.',
-        actionType: 'putar'
+        actionType: 'putar',
+        imageSrc: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step04_memutar_tutup_hingga_terbuka.png',
+        image: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step04_memutar_tutup_hingga_terbuka.png'
       },
       {
         number: 5,
         instruction: 'Pasang kembali tutup, lalu putar hingga menutup dengan nyaman.',
         visualCue: 'Pasang dan putar searah jarum jam sampai rapat.',
-        actionType: 'tutup'
+        actionType: 'tutup',
+        imageSrc: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step05_memasang_dan_menutup_tutup_botol.png',
+        image: 'assets/illustrations/steps/ex11_memutar_tutup_botol_step05_memasang_dan_menutup_tutup_botol.png'
       }
     ],
     teacherGuide: {
@@ -1035,36 +1167,48 @@ export const EXERCISES = [
     studentText: 'Ayo masukkan kancing ke dalam lubangnya.',
     goal: 'Melatih keterampilan manipulasi jari yang digunakan saat berpakaian (bina diri).',
     tools: ['Papan latihan kancing atau pakaian dengan kancing berukuran besar'],
+    imageSrc: 'assets/illustrations/12_latihan_mengancingkan_baju.png',
+    image: 'assets/illustrations/12_latihan_mengancingkan_baju.png',
     steps: [
       {
         number: 1,
         instruction: 'Letakkan papan kancing atau pakaian pada meja.',
         visualCue: 'Kain dibentangkan rata dan stabil di hadapan murid.',
-        actionType: 'posisi'
+        actionType: 'posisi',
+        imageSrc: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step01_meletakkan_papan_kancing.png',
+        image: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step01_meletakkan_papan_kancing.png'
       },
       {
         number: 2,
         instruction: 'Pegang kain atau sisi lubang kancing agar tidak bergeser.',
         visualCue: 'Satu tangan meregangkan bibir lubang kancing.',
-        actionType: 'tahan'
+        actionType: 'tahan',
+        imageSrc: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step02_menahan_kain_dan_lubang_kancing.png',
+        image: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step02_menahan_kain_dan_lubang_kancing.png'
       },
       {
         number: 3,
         instruction: 'Pegang satu kancing dengan tangan yang paling fungsional.',
         visualCue: 'Jepit tepian kancing dengan ujung jari jempol-telunjuk.',
-        actionType: 'pegang'
+        actionType: 'pegang',
+        imageSrc: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step03_memegang_kancing.png',
+        image: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step03_memegang_kancing.png'
       },
       {
         number: 4,
         instruction: 'Arahkan kancing menuju lubangnya dan dorong perlahan hingga masuk.',
         visualCue: 'Miringkan kancing dan selipkan separuh badan kancing ke celah.',
-        actionType: 'selip'
+        actionType: 'selip',
+        imageSrc: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step04_memasukkan_kancing_ke_lubang.png',
+        image: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step04_memasukkan_kancing_ke_lubang.png'
       },
       {
         number: 5,
         instruction: 'Rapikan kain, lalu lanjutkan ke kancing berikutnya jika mampu.',
         visualCue: 'Tarik kancing dari sisi sebaliknya sampai terpasang sempurna.',
-        actionType: 'kancing'
+        actionType: 'kancing',
+        imageSrc: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step05_merapikan_kain_setelah_kancing_terpasang.png',
+        image: 'assets/illustrations/steps/ex12_latihan_mengancingkan_baju_step05_merapikan_kain_setelah_kancing_terpasang.png'
       }
     ],
     teacherGuide: {

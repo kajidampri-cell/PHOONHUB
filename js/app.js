@@ -165,10 +165,9 @@ class BinaGerakApp {
       return `
         <article class="activity-card ${ex.categoryId}" tabindex="0">
           <div>
-            <!-- Thumbnail Visual 2D Animasi Realistis -->
+            <!-- Thumbnail Visual Ilustrasi -->
             <div class="activity-card-thumb" aria-hidden="true">
-              <span class="anim-badge-indicator"><span class="anim-pulse-dot"></span> 2D Gerak</span>
-              ${ex.illustrationSvg}
+              ${ex.imageSrc ? `<img src="${ex.imageSrc}" alt="Ilustrasi ${ex.titleId}" class="activity-card-img" loading="lazy" />` : ex.illustrationSvg}
             </div>
             <div class="card-top">
               <span class="activity-badge ${ex.categoryId}">Kategori ${catObj?.code || ''}</span>
@@ -245,21 +244,45 @@ class BinaGerakApp {
       safetyBanner.style.display = 'none';
     }
 
-    // Visual Stage & 2D Animation Controls
+    // Visual Stage & Ilustrasi / Animasi
     const visualStage = document.getElementById('ex-visual-stage');
-    visualStage.innerHTML = ex.illustrationSvg;
+    let showingSvg = false;
+    const currentStepImage = stepData.imageSrc || stepData.image || ex.imageSrc;
+    if (currentStepImage) {
+      visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
+    } else {
+      visualStage.innerHTML = ex.illustrationSvg;
+    }
     visualStage.classList.remove('animation-paused');
     document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
 
     const animToggleBtn = document.getElementById('anim-toggle-btn');
     if (animToggleBtn) {
-      animToggleBtn.innerHTML = '⏸️ <span>Jeda Animasi 2D</span>';
-      animToggleBtn.onclick = () => {
-        const isNowPaused = visualStage.classList.toggle('animation-paused');
-        animToggleBtn.innerHTML = isNowPaused
-          ? '▶️ <span>Putar Animasi 2D</span>'
-          : '⏸️ <span>Jeda Animasi 2D</span>';
-      };
+      if (currentStepImage && ex.illustrationSvg) {
+        animToggleBtn.style.display = 'inline-flex';
+        animToggleBtn.innerHTML = '🔄 <span>Lihat Diagram Animasi 2D</span>';
+        animToggleBtn.onclick = () => {
+          showingSvg = !showingSvg;
+          if (showingSvg) {
+            visualStage.innerHTML = ex.illustrationSvg;
+            animToggleBtn.innerHTML = `🖼️ <span>Lihat Ilustrasi Langkah ${this.currentStep + 1}</span>`;
+          } else {
+            visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
+            animToggleBtn.innerHTML = '🔄 <span>Lihat Diagram Animasi 2D</span>';
+          }
+        };
+      } else if (ex.illustrationSvg) {
+        animToggleBtn.style.display = 'inline-flex';
+        animToggleBtn.innerHTML = '⏸️ <span>Jeda Animasi 2D</span>';
+        animToggleBtn.onclick = () => {
+          const isNowPaused = visualStage.classList.toggle('animation-paused');
+          animToggleBtn.innerHTML = isNowPaused
+            ? '▶️ <span>Putar Animasi 2D</span>'
+            : '⏸️ <span>Jeda Animasi 2D</span>';
+        };
+      } else {
+        animToggleBtn.style.display = 'none';
+      }
     }
 
     // Stepper Indicator & Instruction
@@ -283,7 +306,7 @@ class BinaGerakApp {
     const dotsContainer = document.getElementById('stepper-dots');
     dotsContainer.innerHTML = ex.steps.map((s, idx) => `
       <button class="step-dot ${idx === this.currentStep ? 'active' : (idx < this.currentStep ? 'completed' : '')}"
-              data-step="${idx}" aria-label="Ke langkah ${idx + 1}">
+              data-step="${idx}" aria-label="Ke langkah ${idx + 1}" title="Langkah ${idx + 1}: ${s.visualCue || ''}">
         ${idx + 1}
       </button>
     `).join('');
@@ -294,6 +317,35 @@ class BinaGerakApp {
         this.renderExerciseScreen();
       };
     });
+
+    // Step Cards Strip (1-5 dengan ilustrasi masing-masing langkah)
+    const cardsStrip = document.getElementById('step-cards-strip');
+    if (cardsStrip) {
+      cardsStrip.innerHTML = ex.steps.map((s, idx) => {
+        const isCurrent = idx === this.currentStep;
+        const isCompleted = idx < this.currentStep;
+        const stepImg = s.imageSrc || ex.imageSrc;
+        return `
+          <button class="step-card-item ${isCurrent ? 'active' : (isCompleted ? 'completed' : '')}"
+                  data-step="${idx}"
+                  role="tab"
+                  aria-selected="${isCurrent}"
+                  aria-label="Langkah ${idx + 1}: ${s.visualCue || ''}">
+            <div class="step-card-thumb-mini">
+              <img src="${stepImg}" alt="" loading="lazy" />
+            </div>
+            <span class="step-card-badge">${isCompleted ? '✓ ' : ''}Langkah ${idx + 1}</span>
+          </button>
+        `;
+      }).join('');
+
+      cardsStrip.querySelectorAll('.step-card-item').forEach(card => {
+        card.onclick = () => {
+          this.currentStep = parseInt(card.dataset.step, 10);
+          this.renderExerciseScreen();
+        };
+      });
+    }
 
     // Control Buttons
     const prevBtn = document.getElementById('step-prev-btn');
