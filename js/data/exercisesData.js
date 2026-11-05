@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Master Data: 3 Kategori & 12 Modul Aktivitas Latihan Motorik Halus
  * Berdasarkan: Naskah Lengkap Website Bina Gerak Motorik Halus
  * Dilengkapi Grafis Ilustrasi Vektor 2D Animasi Realistis (Hand & Object Physics)
@@ -43,7 +43,7 @@ export const EXERCISES = [
     code: '01',
     categoryId: 'cat-a',
     titleEn: 'Rolling Pencil',
-    titleId: 'Menggulingkan Pensil',
+    titleId: 'Memutar pensil',
     studentText: 'Ayo gerakkan pensil menggunakan jari tanganmu.',
     goal: 'Mengembangkan kontrol gerakan jari ketika mengubah posisi pensil.',
     tools: ['Satu batang pensil yang nyaman digenggam (tidak licin)'],
@@ -105,7 +105,7 @@ export const EXERCISES = [
     },
     completionPraise: 'Bagus! Kamu sudah mencoba menggerakkan pensil.',
     illustrationSvg: `
-      <svg viewBox="0 0 300 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animasi 2D Realistis Menggulingkan Pensil">
+      <svg viewBox="0 0 300 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animasi 2D Realistis Memutar pensil">
         <defs>
           <linearGradient id="skin01" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#fed7aa"/>
