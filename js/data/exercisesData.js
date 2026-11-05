@@ -49,6 +49,8 @@ export const EXERCISES = [
     tools: ['Satu batang pensil yang nyaman digenggam (tidak licin)'],
     imageSrc: 'assets/illustrations/01_menggulingkan_pensil.png',
     image: 'assets/illustrations/01_menggulingkan_pensil.png',
+    videoSrc: 'assets/videos/01_menggulingkan_pensil.mp4',
+    video: 'assets/videos/01_menggulingkan_pensil.mp4',
     steps: [
       {
         number: 1,
@@ -176,6 +178,8 @@ export const EXERCISES = [
     tools: ['Karet latihan elastis dengan tahanan sangat ringan dan ukuran yang sesuai'],
     imageSrc: 'assets/illustrations/02_membuka_jari_dengan_karet.png',
     image: 'assets/illustrations/02_membuka_jari_dengan_karet.png',
+    videoSrc: 'assets/videos/02_membuka_jari_dengan_karet.mp4',
+    video: 'assets/videos/02_membuka_jari_dengan_karet.mp4',
     steps: [
       {
         number: 1,
@@ -290,6 +294,8 @@ export const EXERCISES = [
     tools: ['Beberapa koin atau keping pipih berukuran aman', 'Alas meja tidak licin'],
     imageSrc: 'assets/illustrations/03_mengambil_koin.png',
     image: 'assets/illustrations/03_mengambil_koin.png',
+    videoSrc: 'assets/videos/03_mengambil_koin.mp4',
+    video: 'assets/videos/03_mengambil_koin.mp4',
     steps: [
       {
         number: 1,
@@ -404,6 +410,8 @@ export const EXERCISES = [
     tools: ['Beberapa koin atau keping aman', 'Wadah yang stabil / meja'],
     imageSrc: 'assets/illustrations/04_melepaskan_koin_satu_per_satu.png',
     image: 'assets/illustrations/04_melepaskan_koin_satu_per_satu.png',
+    videoSrc: 'assets/videos/04_melepaskan_koin_satu_per_satu.mp4',
+    video: 'assets/videos/04_melepaskan_koin_satu_per_satu.mp4',
     steps: [
       {
         number: 1,
@@ -503,6 +511,8 @@ export const EXERCISES = [
     tools: ['Satu pensil yang tidak terlalu licin dan aman digunakan'],
     imageSrc: 'assets/illustrations/05_merayapkan_jari_di_pensil.png',
     image: 'assets/illustrations/05_merayapkan_jari_di_pensil.png',
+    videoSrc: 'assets/videos/05_merayapkan_jari_di_pensil.mp4',
+    video: 'assets/videos/05_merayapkan_jari_di_pensil.mp4',
     steps: [
       {
         number: 1,
@@ -607,6 +617,8 @@ export const EXERCISES = [
     tools: ['Spons bersih dan lembut yang pas dengan ukuran tangan'],
     imageSrc: 'assets/illustrations/06_meremas_spons.png',
     image: 'assets/illustrations/06_meremas_spons.png',
+    videoSrc: 'assets/videos/06_meremas_spons.mp4',
+    video: 'assets/videos/06_meremas_spons.mp4',
     steps: [
       {
         number: 1,
@@ -713,6 +725,8 @@ export const EXERCISES = [
     tools: ['Penjepit baju per ringan yang mudah dibuka', 'Karton tebal atau papan bertepi aman'],
     imageSrc: 'assets/illustrations/07_menjepit_penjepit_baju.png',
     image: 'assets/illustrations/07_menjepit_penjepit_baju.png',
+    videoSrc: 'assets/videos/07_menjepit_penjepit_baju.mp4',
+    video: 'assets/videos/07_menjepit_penjepit_baju.mp4',
     steps: [
       {
         number: 1,
@@ -804,6 +818,8 @@ export const EXERCISES = [
     tools: ['Plastisin lunak, playdough, atau putty latihan yang bersih dan aman'],
     imageSrc: 'assets/illustrations/08_mencubit_plastisin_lunak.png',
     image: 'assets/illustrations/08_mencubit_plastisin_lunak.png',
+    videoSrc: 'assets/videos/08_mencubit_plastisin_lunak.mp4',
+    video: 'assets/videos/08_mencubit_plastisin_lunak.mp4',
     steps: [
       {
         number: 1,
@@ -897,6 +913,8 @@ export const EXERCISES = [
     tools: ['Penjepit tumpul yang ringan/mudah ditekan', 'Pom-pom atau benda kecil ringan', 'Dua wadah kecil'],
     imageSrc: 'assets/illustrations/09_memindahkan_benda_dengan_penjepit.png',
     image: 'assets/illustrations/09_memindahkan_benda_dengan_penjepit.png',
+    videoSrc: 'assets/videos/09_memindahkan_benda_dengan_penjepit.mp4',
+    video: 'assets/videos/09_memindahkan_benda_dengan_penjepit.mp4',
     steps: [
       {
         number: 1,
@@ -989,6 +1007,8 @@ export const EXERCISES = [
     tools: ['Manik-manik berukuran besar dengan lubang jelas', 'Tali yang ujungnya cukup kaku (berselotip)'],
     imageSrc: 'assets/illustrations/10_meronce_manik_manik.png',
     image: 'assets/illustrations/10_meronce_manik_manik.png',
+    videoSrc: 'assets/videos/10_meronce_manik_manik.mp4',
+    video: 'assets/videos/10_meronce_manik_manik.mp4',
     steps: [
       {
         number: 1,
@@ -1078,6 +1098,8 @@ export const EXERCISES = [
     tools: ['Botol plastik stabil dengan tutup berukuran lebar/mudah digenggam', 'Alas antiselip'],
     imageSrc: 'assets/illustrations/11_memutar_tutup_botol.png',
     image: 'assets/illustrations/11_memutar_tutup_botol.png',
+    videoSrc: 'assets/videos/11_memutar_tutup_botol.mp4',
+    video: 'assets/videos/11_memutar_tutup_botol.mp4',
     steps: [
       {
         number: 1,
@@ -1169,6 +1191,8 @@ export const EXERCISES = [
     tools: ['Papan latihan kancing atau pakaian dengan kancing berukuran besar'],
     imageSrc: 'assets/illustrations/12_latihan_mengancingkan_baju.png',
     image: 'assets/illustrations/12_latihan_mengancingkan_baju.png',
+    videoSrc: 'assets/videos/12_latihan_mengancingkan_baju.mp4',
+    video: 'assets/videos/12_latihan_mengancingkan_baju.mp4',
     steps: [
       {
         number: 1,

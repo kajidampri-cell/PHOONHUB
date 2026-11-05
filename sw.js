@@ -1,8 +1,8 @@
-﻿/**
+/**
  * Service Worker: Offline Caching untuk Web Bina Gerak
  */
 
-const CACHE_NAME = 'binagerak-v3';
+const CACHE_NAME = 'binagerak-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -110,6 +110,10 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // Pass video requests directly to network to support HTTP 206 Range requests smoothly
+  if (event.request.destination === 'video' || event.request.url.includes('.mp4')) {
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then(response => {
       return response || fetch(event.request);

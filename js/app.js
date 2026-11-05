@@ -167,7 +167,8 @@ class BinaGerakApp {
           <div>
             <!-- Thumbnail Visual Ilustrasi -->
             <div class="activity-card-thumb" aria-hidden="true">
-              ${ex.imageSrc ? `<img src="${ex.imageSrc}" alt="Ilustrasi ${ex.titleId}" class="activity-card-img" loading="lazy" />` : ex.illustrationSvg}
+              <span class="anim-badge-indicator"><span class="anim-pulse-dot"></span> Video 3D</span>
+              ${ex.imageSrc ? `<img src="${ex.imageSrc}" alt="Ilustrasi ${ex.titleId}" class="activity-card-img" loading="lazy" />` : ''}
             </div>
             <div class="card-top">
               <span class="activity-badge ${ex.categoryId}">Kategori ${catObj?.code || ''}</span>
@@ -209,6 +210,7 @@ class BinaGerakApp {
     this.currentExercise = found;
     this.currentStep = 0;
     this.isTeacherDrawerOpen = false;
+    this.showingVideo = false;
 
     this.renderExerciseScreen();
     this.announce(`Membuka latihan ${found.titleEn}, ${found.titleId}. Langkah 1 dari 5.`);
@@ -244,46 +246,59 @@ class BinaGerakApp {
       safetyBanner.style.display = 'none';
     }
 
-    // Visual Stage & Ilustrasi / Animasi
+    // Visual Stage & Ilustrasi / Animasi Video 3D
     const visualStage = document.getElementById('ex-visual-stage');
-    let showingSvg = false;
     const currentStepImage = stepData.imageSrc || stepData.image || ex.imageSrc;
-    if (currentStepImage) {
-      visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
-    } else {
-      visualStage.innerHTML = ex.illustrationSvg;
+    const hasVideo = !!(ex.videoSrc || ex.video);
+    const videoUrl = ex.videoSrc || ex.video;
+
+    // Reset mode video saat berpindah langkah atau aktivitas
+    if (this._activeExId !== ex.id || this._activeStepIndex !== this.currentStep) {
+      this.showingVideo = false;
+      this._activeExId = ex.id;
+      this._activeStepIndex = this.currentStep;
     }
-    visualStage.classList.remove('animation-paused');
-    document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
 
     const animToggleBtn = document.getElementById('anim-toggle-btn');
-    if (animToggleBtn) {
-      if (currentStepImage && ex.illustrationSvg) {
-        animToggleBtn.style.display = 'inline-flex';
-        animToggleBtn.innerHTML = '🔄 <span>Lihat Diagram Animasi 2D</span>';
-        animToggleBtn.onclick = () => {
-          showingSvg = !showingSvg;
-          if (showingSvg) {
-            visualStage.innerHTML = ex.illustrationSvg;
-            animToggleBtn.innerHTML = `🖼️ <span>Lihat Ilustrasi Langkah ${this.currentStep + 1}</span>`;
-          } else {
-            visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
-            animToggleBtn.innerHTML = '🔄 <span>Lihat Diagram Animasi 2D</span>';
-          }
-        };
+
+    const updateStageDisplay = () => {
+      if (this.showingVideo && hasVideo) {
+        visualStage.innerHTML = `
+          <video class="visual-stage-video" src="${videoUrl}" controls autoplay loop muted playsinline aria-label="Video animasi 3D demonstrasi ${ex.titleId}"></video>
+        `;
+        document.getElementById('ex-visual-caption').textContent = `Video Demonstrasi 3D: ${ex.titleId}`;
+        if (animToggleBtn) {
+          animToggleBtn.innerHTML = `🖼️ <span>Lihat Ilustrasi Langkah ${this.currentStep + 1}</span>`;
+          animToggleBtn.className = 'btn btn-primary';
+          animToggleBtn.setAttribute('aria-label', `Kembali ke Ilustrasi Langkah ${this.currentStep + 1}`);
+        }
+      } else if (currentStepImage) {
+        visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
+        document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
+        if (animToggleBtn) {
+          animToggleBtn.innerHTML = hasVideo ? '🎬 <span>Lihat Video Animasi 3D</span>' : '🔄 <span>Lihat Diagram Animasi</span>';
+          animToggleBtn.className = 'btn btn-outline';
+          animToggleBtn.setAttribute('aria-label', hasVideo ? 'Buka Video Animasi 3D' : 'Buka Diagram Animasi');
+        }
       } else if (ex.illustrationSvg) {
+        visualStage.innerHTML = ex.illustrationSvg;
+        document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
+      }
+    };
+
+    if (animToggleBtn) {
+      if (hasVideo || ex.illustrationSvg) {
         animToggleBtn.style.display = 'inline-flex';
-        animToggleBtn.innerHTML = '⏸️ <span>Jeda Animasi 2D</span>';
         animToggleBtn.onclick = () => {
-          const isNowPaused = visualStage.classList.toggle('animation-paused');
-          animToggleBtn.innerHTML = isNowPaused
-            ? '▶️ <span>Putar Animasi 2D</span>'
-            : '⏸️ <span>Jeda Animasi 2D</span>';
+          this.showingVideo = !this.showingVideo;
+          updateStageDisplay();
         };
       } else {
         animToggleBtn.style.display = 'none';
       }
     }
+
+    updateStageDisplay();
 
     // Stepper Indicator & Instruction
     document.getElementById('step-current-tag').textContent = `Langkah ${this.currentStep + 1} dari 5`;
