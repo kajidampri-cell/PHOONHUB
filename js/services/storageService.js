@@ -67,7 +67,6 @@ export const StorageService = {
       'Tugas Dilakukan',
       'Tingkat Bantuan',
       'Ketepatan Gerakan',
-      'Kondisi Tangan',
       'Catatan Observasi',
       'Tindak Lanjut'
     ];
@@ -84,7 +83,6 @@ export const StorageService = {
         `"${r.taskExecution || '-'}"`,
         `"${r.assistanceLevel || '-'}"`,
         `"${r.movementAccuracy || '-'}"`,
-        `"${r.handCondition || '-'}"`,
         `"${cleanNotes}"`,
         `"${r.followUpAction || '-'}"`
       ];

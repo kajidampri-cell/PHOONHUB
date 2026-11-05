@@ -453,7 +453,6 @@ class BinaGerakApp {
       taskExecution: formData.get('taskExecution') || 'Ya',
       assistanceLevel: formData.get('assistanceLevel') || 'Mandiri',
       movementAccuracy: formData.get('movementAccuracy') || 'Baik',
-      handCondition: formData.get('handCondition') || 'Nyaman',
       qualitativeNotes: formData.get('qualitativeNotes') || '',
       followUpAction: formData.get('followUpAction') || 'Lanjutkan'
     };
@@ -490,7 +489,7 @@ class BinaGerakApp {
         <li class="recap-item">
           <div class="recap-item-info">
             <strong>${r.exerciseTitle}</strong>
-            <span>Murid: ${r.studentCode} | Bantuan: ${r.assistanceLevel} | Kondisi Tangan: ${r.handCondition}</span>
+            <span>Murid: ${r.studentCode} | Bantuan: ${r.assistanceLevel}</span>
             ${r.qualitativeNotes ? `<span style="font-style: italic; color: #475569;">"${r.qualitativeNotes}"</span>` : ''}
           </div>
           <div>
@@ -514,7 +513,7 @@ class BinaGerakApp {
     if (!tableBody) return;
 
     if (records.length === 0) {
-      tableBody.innerHTML = `<tr><td colspan="7" style="text-align: center;">Belum ada catatan aktivitas hari ini.</td></tr>`;
+      tableBody.innerHTML = `<tr><td colspan="6" style="text-align: center;">Belum ada catatan aktivitas hari ini.</td></tr>`;
       return;
     }
 
@@ -525,7 +524,6 @@ class BinaGerakApp {
         <td>${r.studentCode}</td>
         <td>${r.assistanceLevel}</td>
         <td>${r.movementAccuracy}</td>
-        <td>${r.handCondition}</td>
         <td>${r.qualitativeNotes || '-'} (${r.followUpAction})</td>
       </tr>
     `).join('');

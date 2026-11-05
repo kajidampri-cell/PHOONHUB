@@ -295,7 +295,6 @@
               <th>Kode Murid</th>
               <th>Tingkat Bantuan</th>
               <th>Ketepatan</th>
-              <th>Kondisi Tangan</th>
               <th>Catatan Observasi & Tindak Lanjut</th>
             </tr>
           </thead>
@@ -397,13 +396,10 @@
                 <input type="radio" name="assistanceLevel" value="Mandiri" checked> Mandiri
               </label>
               <label class="radio-card-label">
-                <input type="radio" name="assistanceLevel" value="Petunjuk Visual"> Petunjuk Visual
+                <input type="radio" name="assistanceLevel" value="Dengan Bantuan"> Dengan Bantuan
               </label>
               <label class="radio-card-label">
-                <input type="radio" name="assistanceLevel" value="Petunjuk Verbal"> Petunjuk Verbal
-              </label>
-              <label class="radio-card-label">
-                <input type="radio" name="assistanceLevel" value="Bantuan Fisik"> Bantuan Fisik
+                <input type="radio" name="assistanceLevel" value="Belum Bisa"> Belum Bisa
               </label>
             </div>
           </div>
@@ -424,26 +420,7 @@
             </div>
           </div>
 
-          <!-- Parameter 4: Kondisi Tangan -->
-          <div class="form-group">
-            <label>Kondisi Tangan & Respon Fisik</label>
-            <div class="radio-cards-grid">
-              <label class="radio-card-label">
-                <input type="radio" name="handCondition" value="Nyaman" checked> Nyaman
-              </label>
-              <label class="radio-card-label">
-                <input type="radio" name="handCondition" value="Lelah"> Lelah
-              </label>
-              <label class="radio-card-label">
-                <input type="radio" name="handCondition" value="Tidak Nyaman"> Tidak Nyaman
-              </label>
-              <label class="radio-card-label">
-                <input type="radio" name="handCondition" value="Nyeri"> Nyeri
-              </label>
-            </div>
-          </div>
-
-          <!-- Parameter 5: Tindak Lanjut -->
+          <!-- Parameter 4: Tindak Lanjut -->
           <div class="form-group">
             <label for="eval-follow-up">Rekomendasi Tindak Lanjut Sesi Berikutnya</label>
             <select id="eval-follow-up" name="followUpAction" class="form-select">
@@ -454,7 +431,7 @@
             </select>
           </div>
 
-          <!-- Parameter 6: Catatan Observasi Bebas -->
+          <!-- Parameter 5: Catatan Observasi Bebas -->
           <div class="form-group">
             <label for="eval-notes">Catatan Observasi Khusus Guru</label>
             <textarea id="eval-notes" name="qualitativeNotes" class="form-textarea" placeholder="Tuliskan respon murid, kestabilan lengan, atau alat penunjang yang dipakai..."></textarea>
