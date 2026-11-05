@@ -263,6 +263,7 @@ class BinaGerakApp {
 
     const updateStageDisplay = () => {
       if (this.showingVideo && hasVideo) {
+        visualStage.classList.add('has-video');
         visualStage.innerHTML = `
           <video class="visual-stage-video" src="${videoUrl}" controls autoplay loop muted playsinline aria-label="Video animasi 3D demonstrasi ${ex.titleId}"></video>
         `;
@@ -273,6 +274,7 @@ class BinaGerakApp {
           animToggleBtn.setAttribute('aria-label', `Kembali ke Ilustrasi Langkah ${this.currentStep + 1}`);
         }
       } else if (currentStepImage) {
+        visualStage.classList.remove('has-video');
         visualStage.innerHTML = `<img src="${currentStepImage}" alt="Ilustrasi langkah ${this.currentStep + 1}: ${stepData.visualCue || ex.titleId}" class="visual-stage-img" />`;
         document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
         if (animToggleBtn) {
@@ -281,6 +283,7 @@ class BinaGerakApp {
           animToggleBtn.setAttribute('aria-label', hasVideo ? 'Buka Video Animasi 3D' : 'Buka Diagram Animasi');
         }
       } else if (ex.illustrationSvg) {
+        visualStage.classList.remove('has-video');
         visualStage.innerHTML = ex.illustrationSvg;
         document.getElementById('ex-visual-caption').textContent = stepData.visualCue;
       }

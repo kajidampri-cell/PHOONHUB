@@ -644,14 +644,22 @@ body {
 
 .visual-illustration-container {
   width: 100%;
-  max-width: 360px;
-  height: 250px;
+  max-width: 380px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-radius: var(--radius-md);
   background-color: #f8fafc;
+  transition: max-width var(--transition-normal), height var(--transition-normal);
+}
+
+.visual-illustration-container.has-video,
+.visual-illustration-container:has(video) {
+  max-width: 380px;
+  height: 350px;
+  background-color: transparent;
 }
 
 .visual-illustration-container svg {
@@ -676,11 +684,12 @@ body {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center center;
   display: block;
-  border-radius: var(--radius-sm);
-  background-color: #020617;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .visual-cue-caption {
@@ -1223,6 +1232,11 @@ body {
   }
   .exercise-stage {
     padding: 20px 16px;
+  }
+  .visual-illustration-container.has-video,
+  .visual-illustration-container:has(video) {
+    max-width: 100%;
+    height: 300px;
   }
   .instruction-main-text {
     font-size: 1.3rem;

@@ -2,7 +2,7 @@
  * Service Worker: Offline Caching untuk Web Bina Gerak
  */
 
-const CACHE_NAME = 'binagerak-v5';
+const CACHE_NAME = 'binagerak-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
